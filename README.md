@@ -24,7 +24,7 @@ NO THIS WON'T GET YOU UNBANNED. THIS IS SIMPLY A TOOL YOU CAN USE IF YOU'RE HWID
 
 ***
 
-How To Use
+## How To Use
 
 #### 1- Run the batch file as admin
 
