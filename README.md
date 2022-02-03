@@ -2,6 +2,9 @@
 
 > Full Apex/EAC/Origin Trace Files Cleaner
 
+
+> Join To Discord : [Discord](https://discord.gg/ADS8VHJndK)
+
 ## This is the best cleaner I've ever made.
 
 So this is a Full Apex Legends trace cleaner. Mostly my friend who wishes to be anonymous sent me this said it was ok if I posted on UC and I said why not. I added some registry files of my own since I saw it was missing but the rest is his work I'm pretty sure.
