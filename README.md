@@ -3,7 +3,7 @@
 > Full Apex/EAC/Origin Trace Files Cleaner
 
 
-### Join Discord : https://discord.gg/JUyNjXCG5d
+### Join Discord : https://discord.gg/hjnuP6Ksct
 
 ## This is the best cleaner I've ever made.
 
