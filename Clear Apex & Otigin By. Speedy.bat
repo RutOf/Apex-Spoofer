@@ -3,7 +3,7 @@
 title Origin/Apex/EAC Cleaner
 color C
 @ ECHO.
-@ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Respectful unkowncheats) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Sarnax) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @ ECHO.
 @ ECHO                                  This will Log you out so please write down your login
 @ ECHO.
