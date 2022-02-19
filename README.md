@@ -3,7 +3,7 @@
 > Full Apex/EAC/Origin Trace Files Cleaner
 
 
-## [Discord New Server Link](https://discord.gg/4xVkxj4cv4)
+### [Discord.gg/Sarnax](https://discord.com/invite/sarnax)
 
 ## This is the best cleaner I've ever made.
 
