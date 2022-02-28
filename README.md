@@ -3,8 +3,6 @@
 > Full Apex/EAC/Origin Trace Files Cleaner
 
 
-## FiveM spoofer 
-
 ### FOR SUPPORT : [Discord.gg/Sarnax](https://discord.com/invite/sarnax) 
 > #### Discord : Sarnax#9999
 
