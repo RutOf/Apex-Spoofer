@@ -19,7 +19,7 @@
 
 
 
-## This is the best cleaner I've ever made.
+### This is the best cleaner I've ever made.
 
 So this is a Full Apex Legends trace cleaner. Mostly my friend who wishes to be anonymous sent me this said it was ok if I posted on UC and I said why not. I added some registry files of my own since I saw it was missing but the rest is his work I'm pretty sure.
 
@@ -52,11 +52,11 @@ NO THIS WON'T GET YOU UNBANNED. THIS IS SIMPLY A TOOL YOU CAN USE IF YOU'RE HWID
 ***
 
 
-## Can I play now without getting banned ?
+### Can I play now without getting banned ?
 
 > No. You just cleaned your traces, As explained by someone else (kudos), Its like cleaning
 
-## Spoofing HWID
+### Spoofing HWID
 
 > After cleaning traces you will have to Change the following HWID serials.
 ```
@@ -69,10 +69,10 @@ MAC
 
 There are many free spoofing methods (even permanent ones) google will be your best friend.
 
-## Can't find anything ?
+### Can't find anything ?
 
 > Then try making a KVM with GPU integration [Use search function ↗)
 
-## Will this unban my account ?
+### Will this unban my account ?
 
 > No, there is no UNBAN TOOL so stop looking for one. Just follow steps explained make a new account and enjoy.
