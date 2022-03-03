@@ -1,14 +1,13 @@
 ## Apex Cleaner
-> Full Apex/EAC/Origin Trace Files Cleaner
-
-
+Clear Residual Cheating / Banned History / Advanced Junk Cleanup
+> SUPPORT WINDOWS 10 V.1809 - WINDOWS 11 21H2
+***
   <p align="center">
     <a href="https://discord.gg/bzfWPSsDfR">
         <img title="Sarnax discord" alt="SarnaxLii's discord" src="https://discord.c99.nl/widget/theme-4/582142955742298132.png"/>
     </a>
 </p>
 
-***
 
 #### 💬 For Sell Cheating & Support  : [discord.gg/Sarnax](https://discord.com/invite/sarnax) 
 > ##### Discord : Sarnax#9999
