@@ -20,6 +20,7 @@ echo Cleaning Process......
 timeout /t 02 >nul
 @ ECHO.
 taskkill /f /im smartscreen.exe
+taskkill /f /im smartscreen.exe
 taskkill /f /im EasyAntiCheat.exe
 taskkill /f /im dnf.exe
 taskkill /f /im DNF.exe
