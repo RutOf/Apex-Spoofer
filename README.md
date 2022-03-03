@@ -18,6 +18,11 @@ Clear Residual Cheating / Banned History / Advanced Junk Cleanup
 
 
 
+https://user-images.githubusercontent.com/94861415/156622554-948f8194-2cb9-4f91-b74a-8bd4b8bcc897.mp4
+
+
+
+
 ### This is the best cleaner I've ever made.
 
 So this is a Full Apex Legends trace cleaner. Mostly my friend who wishes to be anonymous sent me this said it was ok if I posted on UC and I said why not. I added some registry files of my own since I saw it was missing but the rest is his work I'm pretty sure.
