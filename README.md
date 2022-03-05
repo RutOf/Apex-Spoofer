@@ -9,7 +9,7 @@ Clear Residual Cheating / Banned History / Advanced Junk Cleanup
 </p>
 
 
-#### 💬 For Sell Cheating & Support  : [discord.gg/Sarnax](https://discord.com/invite/sarnax) 
+#### 💬 For Sell Cheating & Support  : [discord.gg/Sarnax](https://discord.com/invite/sarnax) 💢 Discord Problem wait update 💢
 > ##### Discord : Sarnax#9999
 > - Craete Cheating Private // Spoofer and Source 
 > - Contact Discord to order.
