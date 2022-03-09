@@ -9,7 +9,7 @@ Clear Residual Cheating / Banned History / Advanced Junk Cleanup
 </p>
 
 
-#### :speech_balloon: JOIN DISCORD : [discord.gg/Sarnax](https://discord.com/invite/sarnax)
+#### 💬 JOIN DISCORD : [CLICK FOR JOIN DISCORD ](https://discord.com/invite/sarnaxofficial)
 > ##### Discord : Sarnax#9999
 > - DM for buy Cheating Private & Source ( UD + Update Lifetime )
 > - come in to be the same society as us
