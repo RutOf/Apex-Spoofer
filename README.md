@@ -1,17 +1,20 @@
 ## Apex Cleaner
 Clear Residual Cheating / Banned History / Advanced Junk Cleanup
 > SUPPORT WINDOWS 10 V.1809 - WINDOWS 11 21H2
+> 
 ***
   <p align="center">
-    <a href="https://discord.gg/7Z6BDGmFRc">
+    <a href="https://discord.com/users/943374631644045363">
         <img title="Sarnax discord" alt="SarnaxLii's discord" src="https://discord.c99.nl/widget/theme-3/943374631644045363.png"/>
     </a>
 </p>
 
 
-#### 💬 JOIN DISCORD : [Sarnax](https://discord.com/users/943374631644045363) ( You must add me as a friend. I will send you a link to the server. )
+#### 💬 JOIN DISCORD : [SARNAX SERVER](https://discord.com/users/943374631644045363) ( You must add me as a friend. I will send you a link to the server. )
 > - DM for buy Cheating Private & Source
 > - come in to be the same society as us
+
+***
 
 ***
 
