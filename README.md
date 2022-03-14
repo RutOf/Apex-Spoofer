@@ -1,7 +1,7 @@
 ## Apex Cleaner
-Clear Residual Cheating / Banned History / Advanced Junk Cleanup
-> SUPPORT WINDOWS 10 V.1809 - WINDOWS 11 21H2
-> 
+
+This is to clear the login history / trace files / Cheting remnants that are left locally. I'm not sure if it can unban the Hardware ID or not, you have to test it yourself. If you encounter problems, contact our Discord.
+
 ***
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
@@ -10,9 +10,9 @@ Clear Residual Cheating / Banned History / Advanced Junk Cleanup
 </p>
 
 
-### 💬 Join Discord & Support : [HEX SUPPORT](https://discord.com/users/943374631644045363) (Add Friend For Invite Discord)
-> - DM for buy Cheating Private & Source
-> - come in to be the same society as us
+#### 💬 Discord For Support & Buy Cheating Private: [SARNAX SERVER](https://discord.com/users/943374631644045363) // (Add Friend For Invite Discord)
+> - Help with any problems you encounter.
+> - We do not expect profit We hope you only get good things.
 
 
 ***
