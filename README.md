@@ -10,8 +10,8 @@ This is to clear the login history / trace files / Cheting remnants that are lef
 </p>
 
 
-#### 💬 Discord For Support & Buy Cheating Private: [SARNAX SERVER](https://discord.com/users/943374631644045363) // (Add Friend For Invite Discord)
-> - Help with any problems you encounter.
+### 💬 Discord For Support : [HEX SUPPORT](https://discord.com/users/943374631644045363) (Add Friend For Invite Discord)
+> - Contact Cheating Private / Source DM 
 > - We do not expect profit We hope you only get good things.
 
 
