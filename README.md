@@ -11,7 +11,8 @@ This is to clear the login history / trace files / Cheting remnants that are lef
 
 
 ### 💬 Discord For Support : [HEX Community](https://discord.com/users/943374631644045363) (Add Friend For Invite Discord)
-> - Contact Cheating Private / Source DM 
+
+#### Contact Cheating Private & Source Dm Discord : Sarnax#7522
 > - We do not expect profit We hope you only get good things.
 
 
