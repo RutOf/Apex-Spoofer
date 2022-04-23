@@ -15,12 +15,15 @@ This is to clear the login history / trace files / Cheting remnants that are lef
     </a>
 </p>
 
-* ` SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
+### 📌・  JOIN DISCORD / SUPPORT : [HEX COMMUNITY](https://discord.gg/6ZdJwQ7Dmk) 
+
+* `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
+* ` UPDATE FREE LIFETIME & UD `
 * ` IF YOU WANT A SAFE CHEATING PRIVATE , THINK OF ME`
-* ` SAFE 100% IF BANNED = REFUND`
+* ` SAFE 100% IF BANNED = REFUND MONEY`
 * ` UPDATE LIFETIME & SUPPORT 24 HR `
 
-🤓・To order, please add a friend to request an invitation to the Discord server.
+🐵・**We** have a backup server base and many main servers and we are **LEGIT**
  ```sh-session
 If you can't join the server please add me to invite discord server : Sarnax#7522
 ```          
