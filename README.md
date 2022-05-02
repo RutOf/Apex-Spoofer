@@ -15,7 +15,7 @@ This is to clear the login history / trace files / Cheting remnants that are lef
     </a>
 </p>
 
-### 📌・  JOIN DISCORD / BUY : [HEX COMMUNITY](https://discord.gg/S2NxQRvsvn)  
+### 📌・  JOIN DISCORD / BUY PRIVATE : [HEX COMMUNITY](https://discord.gg/S2NxQRvsvn) 
 
 * `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
 * ` UPDATE FREE LIFETIME & UD `
