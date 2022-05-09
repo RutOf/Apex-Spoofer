@@ -1,7 +1,9 @@
 ## APEX CLEAR TRACE FILES
 
-This is to clear the login history / trace files / Cheting remnants that are left locally. I'm not sure if it can unban the Hardware ID or not, you have to test it yourself. If you encounter problems, contact our Discord.
+```sh-session
+WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STICK ? / USE THIS TO DELTE BAN TRACE FILES.
 
+```
 ***
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
