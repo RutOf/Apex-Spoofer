@@ -12,7 +12,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 </p>
 
 
-### 🔔・ NEW DISCORD : [HEX SERVER](https://discord.gg/JsxqNHgR4m) 
+### 🔔・DISCORD : [HEX SERVER](https://discord.gg/7vVb9g7FGT)
 
 
 * `👋 SELL CHEATING PRIVATE / SPOOFER / SOURCE CODE / ETC `
