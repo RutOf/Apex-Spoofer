@@ -96,3 +96,6 @@ There are many free spoofing methods (even permanent ones) google will be your b
 ### Will this unban my account ?
 
 > No, there is no UNBAN TOOL so stop looking for one. Just follow steps explained make a new account and enjoy.
+
+
+<h2 align="center"> Copyright © 2021 - 2022
