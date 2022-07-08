@@ -84,6 +84,8 @@ del / s / f / a : h / a : a / q "%username%\AppData\Local\g3\Saved\SaveGames\*.*
 rmdir / s / q "%appdata%\Roaming\EasyAntiCheat"
 del / f / s / q "%appdata%\Roaming\EasyAntiCheat\*.*"
 rmdir / s / a : h / a : a / q "%appdata%\Roaming\EasyAntiCheat"
+rmdir / s / a : h / a : a / q "%appdata%\Roaming\EasyAntiCheat"
+rmdir / s / a : h / a : a / q "%appdata%\Roaming\EasyAntiCheat"
 del / s / f / a : h / a : a / q "%appdata%\Roaming\EasyAntiCheat\*.*"
 rmdir / s / q "%systemdrive%\Program Files\Common Files\EAInstaller\"
 rmdir / s / a : h / a : a / q "%systemdrive%\Program Files\Common Files\EAInstaller\"
