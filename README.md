@@ -33,8 +33,10 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 
 
 
+https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
 
-https://user-images.githubusercontent.com/94861415/156622554-948f8194-2cb9-4f91-b74a-8bd4b8bcc897.mp4
+
+
 
 
 
