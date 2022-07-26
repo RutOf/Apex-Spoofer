@@ -13,6 +13,7 @@ color C
 @ ECHO                  	             Ready... Press any key to Clean your System
 @ ECHO ------------------------------------------------------------------------------------------------------------------------
 @ ECHO.
+@ ECHO.
 pause
 @ ECHO.
 echo Cleaning Process......
