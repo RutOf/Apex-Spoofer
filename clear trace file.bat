@@ -1145,10 +1145,6 @@ netsh advfirewall reset
 @ ECHO.
 @ ECHO.
 @ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
 echo                 				System cleaned successfully
 @ ECHO.
 echo  		You Can Now Launch Origin *Note That Apex Will Start Verifying Game Files by Itself*
