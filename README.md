@@ -20,7 +20,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
         <img title="Sarnax discord" alt="SarnaxLii's discord" src="https://discord.c99.nl/widget/theme-3/943374631644045363.png"/>
     </a>
 </p>
-
+  
 
  
 ### 💬 DISCORD ・ [HEX PROJECT](https://discord.gg/MBTkVcJefp) 
