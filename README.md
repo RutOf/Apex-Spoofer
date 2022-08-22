@@ -5,7 +5,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 
 ``` 
 
-### ❗ Read here  
+### ❗ Read here   
 
 
 ・Instructions for use are in the video. Just follow the video is enough. 
