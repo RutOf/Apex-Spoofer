@@ -13,7 +13,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 ・And read the entire text below to understand how to delete trace files. to prevent future bans This is safe and virus free. 
 
 ・You can check it yourself. Because this is a .bat file which can be edited to check.
-
+ 
 ---
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
