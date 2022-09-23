@@ -10,9 +10,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 
 ・Instructions on how to use are in the video. Just following the video is enough.
 
-・And read the entire text below to understand how to delete trace files. to prevent future bans This is safe and virus free. 
-
-・You can check it yourself. Because this is a .bat file which can be edited to check.
+・This is not a virus, it is completely safe and open source, meaning you can look throught the files to ensure it does not damage your PC.
  
 *** 
   <p align="center">
