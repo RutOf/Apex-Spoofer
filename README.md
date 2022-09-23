@@ -8,7 +8,7 @@ WHEN YOU SIGN UP FOR A NEW ACCOUT HOW MANU MINUTES WILL YOU BE BANNED IN THE STI
 ### ❗ Read here   
 
 
-・Instructions for use are in the video. Just follow the video is enough. 
+・Instructions on how to use are in the video. Just following the video is enough.
 
 ・And read the entire text below to understand how to delete trace files. to prevent future bans This is safe and virus free. 
 
@@ -80,7 +80,7 @@ NO THIS WON'T GET YOU UNBANNED. THIS IS SIMPLY A TOOL YOU CAN USE IF YOU'RE HWID
 
 #### 1- Run the batch file as admin
 
-#### 2- Restart your pc
+#### 2- Restart your PC
 
 #### 3- When you go to origin right click on apex > Locate game > then locate your game so you don't have to fully reinstall it.
 
@@ -89,7 +89,7 @@ NO THIS WON'T GET YOU UNBANNED. THIS IS SIMPLY A TOOL YOU CAN USE IF YOU'RE HWID
 
 ### Can I play now without getting banned ?
 
-> No. You just cleaned your traces, As explained by someone else (kudos), Its like cleaning
+> No. You just cleaned your traces, As explained by someone else (kudos), Its like removing all traces of evidence that you were banned before.
 
 ### Spoofing HWID
 
