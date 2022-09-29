@@ -5,44 +5,41 @@ WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE 
 
 ``` 
  
-### ❗ Read here   
+### 💎 〢 HOW TO USE:
+- When you create a new account You will no longer be banned.
+- Scroll down the text to watch the video.
 
-
-・Instructions on how to use are in the video. Just following the video is enough.
-
-・This is not a virus, it is completely safe and open source, meaning you can look through the files to ensure it does not damage your PC.
  
 *** 
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
-        <img title="Fnoberz discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-3/943374631644045363.png"/>
+        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
     </a>
 </p> 
 
-
  
-***
- 
-### 💬 DISCORD ・ [CLOUD | PROJECT](https://discord.gg/MBTkVcJefp) 
+#### 💬 DISCORD ・ [CLOUD | PROJECT](https://discord.gg/MBTkVcJefp) 
 
 
-* ` 🛒: Product:  Cheating Private | Spoofer | Source code | Driver `
-* ` 📌: Update Free | Undetected ` 
+*  🛒: `PRODUCT:  PRIVATE CHEATING | SPOOFER PRIVATE | SOURCE CODE| ETC.`
+*  📌: `UPDATE FREE LIFETIME | LEGIT | CHEATING IS LIFETIME ONLY `
 
-### 🤓 Services 
 
-* ` Product Warranty | If banned = Refund | Spoofer not working = Refund `
+### 🤑 Services 
+
+* ` PRODUCT WARANTY | IF BANNED = REFUND MONEY | SPOOFER NOT WORKING = REFUND MONEY `
 
 - Additional questions For the Product [Announcement](https://github.com/SarnaxLii/Announcement)
+- [Discord Server](https://discord.gg/MBTkVcJefp)
 
-#### 📝 WEBSITE [FNOBERZ.COM](http://fnoberz.com/)
+
+#### 📝 WEBSITE [FNOBERZ.COM](http://fnoberz.com/)  | Portfolio
 
  ```sh-session
 ・ OUR CHEATING PRIVATE CAN PLAY MAIN ACCOUNT WITHOUT GETTING BANNED / JOIN DISCORD: Fnoberz#0001・ 
-```                
+```      
+
 ***
-
-
 
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
 
