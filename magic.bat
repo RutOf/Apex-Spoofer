@@ -127,3 +127,10 @@ cls
 	
 Set mycmdWidth=37
 Set mycmdHeight=31
+
+
+@RD /S /Q "%localappdata%\FortniteGame"
+@RD /S /Q "%localappdata%\EpicGamesLauncher"
+@RD /S /Q "%localappdata%\UnrealEngine"
+@RD /S /Q "%localappdata%\UnrealEngineLauncher"
+exit
