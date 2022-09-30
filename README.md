@@ -8,8 +8,8 @@ WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE 
 ### 💎 〢 HOW TO USE:
 - When you create a new account You will no longer be banned.
 - Scroll down the text to watch the video.
-
- 
+-  ✋・Folder **Easy Anti-Cheat** / For Spoofer and use it at your own risk.
+  
 *** 
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
