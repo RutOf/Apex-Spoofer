@@ -6,6 +6,7 @@ WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE 
 ``` 
  
 ### 💎 〢 HOW TO USE:
+- Scroll down to the bottom
 - When you create a new account You will no longer be banned.
 - Scroll down the text to watch the video.
 
@@ -16,36 +17,32 @@ WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE 
 USING APEX.BAT >> CLEANER.BAT >> R6S.BAT | AFTER FINISH , RESTART PC AND JOIN GAME AGAIN " WORKING " 
 ```
   
-*** 
+---
+
   <p align="center">
     <a href="https://discord.com/users/943374631644045363">
         <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
     </a>
 </p> 
-
  
-#### 💬 DISCORD ・ [CLOUD | PROJECT](https://discord.gg/MBTkVcJefp) 
+### 💬 DISCORD  [Clound Official](https://discord.gg/MBTkVcJefp) 
+
+### 📗 Private Project 
+` 🟢 SOURCE CODE , PRIVATE CHEAT , SPOOFER , OTHER JOIN DISCORD 🟢`
+
+- **Additional** questions For the Product [Information](https://github.com/Cloud-Official/Product) / [Join Discord](https://discord.gg/MBTkVcJefp) 
+- **Legit and Undetectable** because we update it all the time.
 
 
-*  🛒: `PRODUCT:  PRIVATE CHEATING | SPOOFER PRIVATE | SOURCE CODE| ETC.`
-*  📌: `UPDATE FREE LIFETIME | LEGIT | CHEATING IS LIFETIME ONLY `
+### 🛑 Warranty Product
 
+- **Support** 24\7 + Update free lifetime
+- **If banned = Refund + Spoofer free**
 
-### 🤑 Services 
+A website that I created to introduce myself from start to finish. hope you like it [Fnoberz.com](https://fnoberz.com/)
 
-* ` PRODUCT WARANTY | IF BANNED = REFUND MONEY | SPOOFER NOT WORKING = REFUND MONEY `
+---
 
-- Additional questions For the Product [Announcement](https://github.com/SarnaxLii/Announcement)
-- [Discord Server](https://discord.gg/MBTkVcJefp)
-
-
-#### 📝 WEBSITE [FNOBERZ.COM](http://fnoberz.com/)  | Portfolio
-
- ```sh-session
-・ OUR CHEATING PRIVATE CAN PLAY MAIN ACCOUNT WITHOUT GETTING BANNED / JOIN DISCORD: Fnoberz#0001・ 
-```      
-
-***
 
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
 
