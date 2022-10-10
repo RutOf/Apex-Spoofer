@@ -976,11 +976,6 @@ REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedP
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CRLs" /f
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f  
 REG DELETE "HKEY_CURRENT_USER\Software\Classes\Installer\Dependencies" /v MSICache /f
-: Disable Static IP/Enable DHCP    Remove DNS     Enable NICs
-for /f "skip=2 tokens=3*" %%i in ('netsh interface show interface') do (
-netsh int ip set address "%%j" dhcp 
-netsh int ip set dns "%%j" dhcp 
-netsh interface set interface name="%%j" admin=enabled 
 )
 ipconfig /flushdns 
 netsh interface ip delete arpcache
