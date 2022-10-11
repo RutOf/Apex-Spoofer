@@ -5,7 +5,7 @@ WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE 
 
 ``` 
  
-### 💎 〢 HOW TO USE:
+### 💎 〢 HOW TO USE: 
 - Scroll down to the bottom
 - When you create a new account You will no longer be banned.
 - Scroll down the text to watch the video.
