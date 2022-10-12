@@ -1,9 +1,8 @@
 ## APEX SPOOFER 
+![VS](https://img.shields.io/badge/Visual_Studio_Codde-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![File](https://img.shields.io/badge/BATCH_FILES-EFA00B?style=for-the-badge&logo=IntelliJ+IDEA&logoColor=black)
+![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
 
-```sh-session 
-WHEN YOU SIGN UP AND ARE ALWAYS BANNED IN A CONSISTENT AMOUNT OF TIME THEN  USE THIS TO DELETE BAN TRACE FILES.
-
-``` 
  
 ### 💎 〢 HOW TO USE: 
 - Scroll down to the bottom
