@@ -155,10 +155,6 @@ del /q /s "C:\Users\%username%\AppData\Local\Microsoft\Feeds"
 del /a /q /s "C:\Users\%Username%\AppData\Local\updater.log"
 del "%localappdata%\Microsoft\Feeds" /s /f /q
 @RD /S /Q "%C:\MSOCache\{71230000-00E2-0000-1000-00000000}"
-del /s /f /q %userprofile%\Recent\*.*
-del /s /f /q C:\Windows\Prefetch\*.*
-del /s /f /q C:\Windows\Temp\*.*
-del /s /f /q C:\Windows\Public\Libraries\*.*
 del /s /f /q %windir%\temp\*.*
 del /s /f /q %windir%\Prefetch\*.*
 rd /s /q %windir%\Prefetch
@@ -607,12 +603,6 @@ rmdir /s /q "I:\Recovery"
 @del /s /f /a:h /a:a /q "I:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "I:\MSOCache"
 
-rmdir /s /q "J:\Recovery"
-@del /s /f /a:h /a:a /q "J:\Users\Public\Libraries\collection.dat\*.*"
-rmdir /s /q "J:\MSOCache"
-rmdir /s /q "J:\Recovery"
-@del /s /f /a:h /a:a /q "J:\Users\Public\Libraries\collection.dat\*.*"
-rmdir /s /q "J:\MSOCache"
 
 rmdir /s /q "K:\Recovery"
 @del /s /f /a:h /a:a /q "K:\Users\Public\Libraries\collection.dat\*.*"
@@ -996,14 +986,6 @@ REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedP
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f  
 REG DELETE "HKEY_CURRENT_USER\Software\Classes\Installer\Dependencies" /v MSICache /f
 )
-ipconfig /flushdns 
-netsh interface ip delete arpcache
-certutil -URLCache * delete 
-netsh int ip reset 
-netsh int ipv4 reset 
-netsh int ipv6 reset 
-netsh winsock reset
-netsh advfirewall reset 
 exit
 
 
