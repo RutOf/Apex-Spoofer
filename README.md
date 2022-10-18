@@ -4,8 +4,7 @@
 ![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
 
  
-### 💎 〢 HOW TO USE: 
-- Scroll down to the bottom
+### 💎 〢 HOW TO USE: (Scroll down the text to read more)
 - When you create a new account You will no longer be banned.
 - Scroll down the text to watch the video.
 
