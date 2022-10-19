@@ -15,8 +15,6 @@ del "C:\Windows\prefetch\TOOL.EXE-7A8EFD97.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
-{c403512a-5906-4795-92c4-7ab8289ad538}\apps.csg",
-{c403512a-5906-4795-92c4-7ab8289ad538}\apps.csg",
 del "C:\Windows\prefetch\TASKKILL.EXE-0ECD41EC.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
@@ -54,11 +52,8 @@ del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
-   \Critical_10.0.18362.411_1_3d6901e11d91b131dc12ed0eb6c4813e1f2c6_00000000_ae9bff9d-3843-4303-9058-46cbde99eb19\Report.wer",
-   \Critical_10.0.18362.411_1_3d6901e11d91b131dc12ed0eb6c4813e1f2c6_00000000_ae9bff9d-3843-4303-9058-46cbde99eb19\Report.wer", 
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
-   \Critical_10.0.18362.411_1_3d6901e11d91b131dc12ed0eb6c4813e1f2c6_00000000_ae9bff9d-3843-4303-9058-46cbde99eb19",
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf", 
 del "C:\Windows\prefetch\reg.EXE-0AC99A87.pf",
 del "C:\Users\%username%\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData",
@@ -1183,3 +1178,4 @@ ipconfig / >nul
 ipconfig /release >nul
 ipconfig /renew >nul
 timeout /3 >nul
+exit
