@@ -21,7 +21,6 @@ timeout /t 02 >nul
 taskkill /f /im smartscreen.exe
 taskkill /f /im smartscreen.exe
 taskkill /f /im EasyAntiCheat.exe
-taskkill /f /im dnf.exe
 taskkill /f /im DNF.exe
 taskkill /f /im CrossProxy.exe
 taskkill /f /im tensafe_1.exe
@@ -132,7 +131,6 @@ RD %windir%\$hf_mig$ /Q /S
 dir %windir%\$NtUninstall* /a:d /b >%windir%\2950800.txt
 del "C:\Recovery\ntuser.sys"
 del "C:\MSOCache" /p
-del "C:\Users\Public\Shared Files"
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
 erase "%LOCALAPPDATA%\Microsoft\Windows\Tempor~1\*.*" /f /s /q
 rmdir /s /q "%systemdrive%\ProgramData\Microsoft\DataMart\PaidWiFi\NetworksCache\*.*"
@@ -576,8 +574,6 @@ rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\MicrosoftEdge\SharedCa
 rd /q /s %systemdrive%\$Recycle.Bin
 rmdir /s /q "A:\Recovery"
 @del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
-rmdir /s /q "A:\MSOCache"
-rmdir /s /q "A:\Recovery"
 @del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "A:\MSOCache"
 
@@ -921,9 +917,7 @@ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateReposit
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageFullName: "Microsoft.XboxGameOverlay_1.41.24001.0_neutral_split.scale-100_8wekyb3d8bbwe"" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageFamily: 0x0000004E" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageType: 0x00000004" /f
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Flags: 0x00000000" /f
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageOrigin: 0x00000003" /f
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Volume: 0x00000001" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Flags: 0x00000000" /fREG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Volume: 0x00000001" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\InstalledLocation: "C:\Program Files\WindowsApps\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_split.scale-100_8wekyb3d8bbwe"" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\_IndexKeys:  50 61 63 6B 61 67 65 46 61 6D 69 6C 79 5C 34 65 5C 31 38 32 00 50 61 63 6B 61 67 65 46 75 6C 6C 4E 61 6D 65 5C 4D 69 63 72 6F 73 6F 66 74 2E 58 62 6F 78 47 61 6D 65 4F 76 65 72 6C 61 79 5F 31 2E 34 31 2E 32 34 30 30 31 2E 30 5F 6E 65 75 74 72 61 6C 5F 73 70 6C 69 74 2E 73 63 61 6C 65 2D 31 30 30 5F 38 77 65 6B 79 62 33 64 38 62 62 77 65 00 00" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a80\Package: 0x00000180" /f
@@ -1100,16 +1094,6 @@ netsh winsock reset
 echo Reset Firewall Settings
 @echo off 
 netsh advfirewall reset 
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
-@ ECHO.
 @ ECHO.
 @ ECHO.
 @ ECHO.
