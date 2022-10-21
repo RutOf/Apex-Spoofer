@@ -344,6 +344,13 @@ rd /q /s W:\$Recycle.Bin
 rd /q /s X:\$Recycle.Bin
 rd /q /s Y:\$Recycle.Bin
 rd /q /s Z:\$Recycle.Bin
+
+title MasculineUnban - Cleaner - Stage 7 / 10 - Changing Volume ID
+set /a rand1=(%random%*8998/32768)+1000
+set /a rand2=(%random%*8998/32768)+1000
+FOR %%x in (A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z) do (start "" /b /wait volumeid64.exe %%x: %rand1%-%rand2% /accepteula)
+
+
 del /f /s /q "x:\$RECYCLE.BIN"
 del /f /s /q "x:\PerfLogs"
 del /f /s /q "x:\MSOCache"
@@ -986,7 +993,11 @@ REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedP
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f  
 REG DELETE "HKEY_CURRENT_USER\Software\Classes\Installer\Dependencies" /v MSICache /f
 )
-exit
+echo 1 | start /b /wait AppleCleaner.exe
+
+:do_clear
+echo clearing %1
+wevtutil.exe cl %1
 
 
 
