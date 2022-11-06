@@ -4,7 +4,7 @@ color C
 @ ECHO.
 @ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Fnoberz#0001) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @ ECHO.
-@ ECHO                                  This will Log you out so please write down your login
+@ ECHO                                     This will Log you out so please write down your login
 @ ECHO.
 @ ECHO               	! GAME WILL NOW VERIFY ITSELF UPON LOGGING IN, NO NEED TO RESTART PC ANYMORE EITHER !
 @ ECHO.						 ERRORS ARE NORMAL 
