@@ -145,7 +145,29 @@ rmdir /s /q "%systemdrive%\Users\caspue\AppData\Local\Packages\*.*"
 rmdir /s /q "%systemdrive%\Users\caspue\AppData\Local\Speech Graphics\Carnival\*.*"
 rmdir /s /q "%systemdrive%\ProgramData\USOPrivate\UpdateStore\*.*"
 rmdir /s /q "%systemdrive%\ProgramData\USOShared\Logs\*.*"
+
+
 netsh interface set interface "Local Area Connection" disable
+netsh advfirewall reset
+
+
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\EpicGamesLauncher"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\FortniteGame"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\Epic Games"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\NVIDIA Corporation"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\AMD"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Roaming\EasyAntiCheat"
+RMDIR /S /Q "%systemdrive%\ProgramData\Epic\EpicOnlineServices"
+RMDIR /S /Q "%systemdrive%\Program Files (x86)\Epic Games\Epic Online Services\service"
+RMDIR /S /Q "%systemdrive%\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\Shared Files"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngine"
+RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngineLauncher"
+RMDIR /S /Q "C:\Program Files (x86)\Common Files\BattlEye"
+RMDIR /S /Q "C:\Program Files (x86)\EasyAntiCheat"
+RMDIR /S /Q "C:\ProgramData\Epic\EpicGamesLauncher\Data\EMS\current"
+RMDIR /S /Q "C:\ProgramData\Epic\UnrealEngineLauncher\LauncherInstalled.dat"
+RMDIR /S /Q "C:\Users\All Users\Epic\EpicGamesLauncher\Data\EMS\current"
+RMDIR /S /Q "C:\Users\All Users\Epic\UnrealEngineLauncher\LauncherInstalled.dat"
 RD /s /q "C:\Users\%Username%\AppData\Local\CEF"
 RD /s /q "C:\Users\%Username%\AppData\Local\Comms"
 RD /s /q "C:\Users\%Username%\AppData\Local\ConnectedDevicesPlatform"
