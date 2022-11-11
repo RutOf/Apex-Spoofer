@@ -39,8 +39,6 @@ taskkill /f /im dnf.exe
 taskkill /f /im txplatform.exe
 taskkill /f /im TXPlatform.exe
 taskkill /f /im OriginWebHelperService.exe
-taskkill /f /im Origin.exe
-taskkill /f /im OriginClientService.exe
 taskkill /f /im OriginER.exe
 taskkill /f /im OriginThinSetupInternal.exe
 taskkill /f /im OriginLegacyCLI.exe
