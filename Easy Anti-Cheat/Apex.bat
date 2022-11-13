@@ -10,7 +10,7 @@ taskkill /f /im tensafe_2.exe
 taskkill /f /im tencentdl.exe
 taskkill /f /im TenioDL.exe
 taskkill /f /im uishell.exe
-taskkill /f /im dnfchina.exe
+taskkill /f /im dnfchina.exe 
 taskkill /f /im dnfchinatest.exe
 taskkill /f /im dnf.exe
 taskkill /f /im txplatform.exe
