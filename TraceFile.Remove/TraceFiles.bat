@@ -1,5 +1,4 @@
-@echo off
-title Origin/Apex/EAC Cleaner
+
 color C
 @ ECHO.
 @ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Fnoberz#0001) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
