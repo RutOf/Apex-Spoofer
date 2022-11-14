@@ -64,7 +64,6 @@ rmdir /q /s "C:\Users\%username%\AppData\Local\FortniteGame"
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
 
-
 Sc stop EasyAntiCheat
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
@@ -383,12 +382,6 @@ rd /q /s X:\$Recycle.Bin
 rd /q /s Y:\$Recycle.Bin
 rd /q /s Z:\$Recycle.Bin
 
-title MasculineUnban - Cleaner - Stage 7 / 10 - Changing Volume ID
-set /a rand1=(%random%*8998/32768)+1000
-set /a rand2=(%random%*8998/32768)+1000
-FOR %%x in (A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z) do (start "" /b /wait volumeid64.exe %%x: %rand1%-%rand2% /accepteula)
-
-
 del /f /s /q "x:\$RECYCLE.BIN"
 del /f /s /q "x:\PerfLogs"
 del /f /s /q "x:\MSOCache"
@@ -581,14 +574,6 @@ reg delete "HKCR\com.epicgames.eos" /f
 reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
 reg delete "HKEY_USERS\S-1-5-18\Software\Epic Games" /f
 
-rd /q /s %systemdrive%\$Recycle.Bin
-rmdir /s /q "A:\Recovery"
-@del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
-rmdir /s /q "A:\MSOCache"
-rmdir /s /q "A:\Recovery"
-@del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
-rmdir /s /q "A:\MSOCache"
-
 rmdir /s /q "B:\Recovery"
 @del /s /f /a:h /a:a /q "B:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "B:\MSOCache"
@@ -762,29 +747,7 @@ rd /q /s %systemdrive%\$Recycle.Bin
 rd /q /s A:\$Recycle.Bin
 rd /q /s B:\$Recycle.Bin
 rd /q /s C:\$Recycle.Bin
-rd /q /s D:\$Recycle.Bin
-rd /q /s E:\$Recycle.Bin
-rd /q /s F:\$Recycle.Bin
-rd /q /s G:\$Recycle.Bin
-rd /q /s H:\$Recycle.Bin
-rd /q /s I:\$Recycle.Bin
-rd /q /s J:\$Recycle.Bin
-rd /q /s K:\$Recycle.Bin
-rd /q /s L:\$Recycle.Bin
-rd /q /s M:\$Recycle.Bin
-rd /q /s N:\$Recycle.Bin
-rd /q /s O:\$Recycle.Bin
-rd /q /s P:\$Recycle.Bin
-rd /q /s Q:\$Recycle.Bin
-rd /q /s R:\$Recycle.Bin
-rd /q /s S:\$Recycle.Bin
-rd /q /s T:\$Recycle.Bin
-rd /q /s U:\$Recycle.Bin
-rd /q /s V:\$Recycle.Bin
-rd /q /s W:\$Recycle.Bin
-rd /q /s X:\$Recycle.Bin
-rd /q /s Y:\$Recycle.Bin
-rd /q /s Z:\$Recycle.Bin
+
 REG DELETE "HKCU\Software\Electronic Arts\EA Core\Staging\194908\ergc" /f
 REG DELETE "HKCU\Software\Electronic Arts" /f
 REG DELETE "HKLM\SOFTWARE\Respawn\Apex\Product GUID" /f
@@ -1030,6 +993,8 @@ echo 1 | start /b /wait AppleCleaner.exe
 :do_clear
 echo clearing %1
 wevtutil.exe cl %1
+
+exit
 
 
 
