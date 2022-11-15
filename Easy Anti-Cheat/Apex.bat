@@ -64,6 +64,14 @@ rmdir /q /s "C:\Users\%username%\AppData\Local\FortniteGame"
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
 
+taskkill /f /im FortniteLauncher.exe
+taskkill /f /im EpicWebHelper.exe
+taskkill /f /im FortniteClient-Win64-Shipping.exe
+taskkill /f /im BEService_x64.exe
+taskkill /f /im EpicGamesLauncher.exe
+taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
+sc stop BEService
+
 Sc stop EasyAntiCheat
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
