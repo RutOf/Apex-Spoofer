@@ -17,3 +17,4 @@ for /d %%x in (C:\Users\%username%\AppData\Local\Temp\*) do @rd /s /q "%%x"
 
 
 exit 
+ 
