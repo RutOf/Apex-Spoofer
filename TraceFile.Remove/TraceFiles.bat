@@ -43,6 +43,8 @@ taskkill /f /im OriginThinSetupInternal.exe
 taskkill /f /im OriginLegacyCLI.exe
 taskkill /f /im Agent.exe
 taskkill /f /im Client.exe
+taskkill /f /im Discord
+taskkill /f /im EA.exe
 @ ECHO.
 echo Stopping EasyAntiCheat Service......
 Sc stop EasyAntiCheat
