@@ -6,7 +6,7 @@ taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">n
 taskkill /f /im "EasyAntiCheat.exe" /t /fi "status eq running">nul
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
-reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /va /f
+reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /va /f 
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 del "C:\Program Files (x86)\Common Files\BattlEye\BEService.exe" /f
 del "C:\Program Files (x86)\Common Files\BattlEye\BEService_fn.exe" /f
