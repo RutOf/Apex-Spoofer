@@ -1,5 +1,5 @@
 
-color C
+color D
 @ ECHO.
 @ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Fnoberz#0001) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @ ECHO.
