@@ -818,12 +818,7 @@ rd /q /s Z:\$Recycle.Bin
 
 @ ECHO.
 
-REG DELETE "HKCU\Software\Electronic Arts\EA Core\Staging\194908\ergc" /f
-REG DELETE "HKCU\Software\Electronic Arts" /f
-REG DELETE "HKLM\SOFTWARE\Respawn\Apex\Product GUID" /f
-REG DELETE "HKLM\SOFTWARE\Classes\origin" /f
-REG DELETE "HKLM\SOFTWARE\Classes\origin2" /f
-REG DELETE "HKCR\origin" /f
+
 REG DELETE "HKCR\origin2" /f
 REG DELETE "HKCR\Applications\Origin.exe" /f  
 REG DELETE "HKLM\SOFTWARE\Classes\Applications\Origin.exe" /f 
