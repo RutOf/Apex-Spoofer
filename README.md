@@ -7,7 +7,7 @@
 ### 💎 〢 HOW TO USE:
 - When you create a new account You will no longer be banned.
 - Scroll down the text to watch the video. 
- 
+  
 #### 📂 〢 New Folder
 - We added a folder " **Easy Anti-Cheat** " to allow additional numbers to be changed.
 - After using the trace file deletion successfully You can use this folder as the next step.
