@@ -4,10 +4,6 @@ taskkill /f /im EasyAntiCheat.exe
 taskkill /f /im dnf.exe
 taskkill /f /im DNF.exe
 taskkill /f /im CrossProxy.exe
-taskkill /f /im tensafe_1.exe
-taskkill /f /im TenSafe_1.exe
-taskkill /f /im tensafe_2.exe
-taskkill /f /im tencentdl.exe
 taskkill /f /im uishell.exe
 taskkill /f /im dnfchina.exe 
 taskkill /f /im dnfchinatest.exe
@@ -204,8 +200,6 @@ del /f /s /q %systemdrive%\*.dlf
 del /f /s /q %systemdrive%\*.old
 del /f /s /q %windir%\*.bak
 del /f /s /q %windir%\prefetch\*.*
-del /f /s /q %systemdrive%\recycled\*.*
-del /f /s /q %windir%\*.bak
 del /f /s /q "%Temp%"
 rd /s /q %windir%\temp md %windir%\temp
 del /f /s /q "%systemdrive%\ProgramData\Origin\AchievementCache\*"
