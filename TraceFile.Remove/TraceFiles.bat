@@ -14,7 +14,7 @@ color D
 @ ECHO.
 pause
 @ ECHO.
-echo Cleaning Process......
+echo Cleaning Process...... 
 timeout /t 02 >nul
 @ ECHO.
 taskkill /f /im smartscreen.exe 
