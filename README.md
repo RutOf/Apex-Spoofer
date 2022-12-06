@@ -5,7 +5,7 @@
  
  
 ### 💎 〢 HOW TO USE:
-- When you create a new account You will no longer be banned.
+- When you create a new account You will no longer be banned. 
 - Scroll down the text to watch the video. 
   
 #### 📂 〢 New Folder
