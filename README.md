@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-
     <a href="https://discord.com/users/943374631644045363">
         <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
     </a>
-</p> 
+</p>  
  
 ### 💬 ・Discord Server | [Cloud Club](https://discord.gg/MBTkVcJefp) 
 
