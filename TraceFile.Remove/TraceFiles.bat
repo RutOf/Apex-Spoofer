@@ -1,57 +1,20 @@
 
-color D
-@ ECHO.
-@ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Fnoberz#0001) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-@ ECHO.
-@ ECHO                                     This will Log you out so please write down your login
-@ ECHO.
-@ ECHO               	! GAME WILL NOW VERIFY ITSELF UPON LOGGING IN, NO NEED TO RESTART PC ANYMORE EITHER !
-@ ECHO.						 ERRORS ARE NORMAL 
-@ ECHO.
-@ ECHO ------------------------------------------------------------------------------------------------------------------------
-@ ECHO                  	             Ready... Press any key to Clean your System
-@ ECHO ------------------------------------------------------------------------------------------------------------------------
 @ ECHO.
 pause
 @ ECHO.
 echo Cleaning Process...... 
 timeout /t 02 >nul
 @ ECHO.
-taskkill /f /im smartscreen.exe 
-taskkill /f /im smartscreen.exe
-taskkill /f /im EasyAntiCheat.exe
-taskkill /f /im DNF.exe
-taskkill /f /im CrossProxy.exe
-taskkill /f /im tensafe_1.exe
-taskkill /f /im TenSafe_1.exe
-taskkill /f /im tensafe_2.exe
-taskkill /f /im tencentdl.exe
-taskkill /f /im TenioDL.exe
-taskkill /f /im uishell.exe
-taskkill /f /im BackgroundDownloader.exe
-taskkill /f /im conime.exe
-taskkill /f /im QQDL.EXE
-taskkill /f /im qqlogin.exe
-taskkill /f /im dnfchina.exe
-taskkill /f /im dnfchinatest.exe
-taskkill /f /im dnf.exe
-taskkill /f /im txplatform.exe
-taskkill /f /im TXPlatform.exe
-taskkill /f /im OriginWebHelperService.exe
-taskkill /f /im OriginER.exe
-taskkill /f /im OriginThinSetupInternal.exe
-taskkill /f /im OriginLegacyCLI.exe
-taskkill /f /im Agent.exe
-taskkill /f /im Client.exe
-taskkill /f /im Discord
-taskkill /f /im EA.exe
+taskkill /f /im smartscreen.exe /im EasyAntiCheat.exe /im DNF.exe /im CrossProxy.exe /im tensafe_1.exe /im TenSafe_1.exe /im tensafe_2.exe /im tencentdl.exe /im TenioDL.exe /im uishell.exe /im BackgroundDownloader.exe /im conime.exe /im QQDL.EXE /im qqlogin.exe /im dnfchina.exe /im dnfchinatest.exe /im dnf.exe /im txplatform.exe /im TXPlatform.exe /im OriginWebHelperService.exe /im OriginER.exe /im OriginThinSetupInternal.exe /im OriginLegacyCLI.exe /im Agent.exe /im Client.exe /im Discord /im EA.exe
 @ ECHO.
 echo Stopping EasyAntiCheat Service......
 Sc stop EasyAntiCheat
 @ ECHO.
 echo Cleaning Files......(please be patient)
-timeout /t 02 >nul 
-@ ECHO.
+timeout /t 02 >null
+
+del /f /s /q /a:h /a:a "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*" "%systemdrive%\ProgramData\Electronic Arts\EA Services\License\*.*" "%systemdrive%\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.sys" "%systemdrive%\Program Files (x86)\Origin\*.log" "%systemdrive%\Program Files (x86)\Origin\EAProxyInstaller.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy64.exe" "%systemdrive%\Program Files (x86)\Origin\OriginCrashReporter.exe" "%systemdrive%\Program Files (x86)\Origin\OriginER.exe" "%systemdrive%\Program Files (x86)\Origin\OriginWebHelper.exe" "%systemdrive%\Windows\System32\eac_usermode_*.dll" "%username%\AppData\LocalLow\DNF\*.trc" "%username%\AppData\LocalLow\DNF\*.zip" "%username%\AppData\Local\g3\Saved\SaveGames\SaveSettings.sav" "%username%\AppData\Local\g3\Saved\SaveGames\*.*" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\GameUserSettings.ini" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\Game.ini" "%username%\AppData\Local\g3\Saved\Logs\*.log" "%username%\AppData\Local\g3\Saved\Screenshots\*.png"
+
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
 rmdir /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\"
