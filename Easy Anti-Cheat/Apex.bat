@@ -11,7 +11,7 @@ taskkill /f /im dnf.exe
 taskkill /f /im txplatform.exe
 taskkill /f /im TXPlatform.exe
 taskkill /f /im OriginWebHelperService.exe
-taskkill /f /im Origin.exe
+taskkill /f /im Origin.exeฟ
 taskkill /f /im OriginClientService.exe
 taskkill /f /im OriginER.exe
 taskkill /f /im OriginThinSetupInternal.exe
@@ -53,6 +53,16 @@ rmdir /q /s "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK"
 rmdir /q /s "C:\Users\%username%\AppData\Local\UnrealEngine\5.0"
 rmdir /q /s "C:\Users\%username%\AppData\Local\CrashReportClient"
 rmdir /q /s "C:\Users\%username%\AppData\Local\FortniteGame"
+
+rem Delete the specified files
+del "C:\Program Files (x86)\Common Files\BattlEye\BEService.exe" /f
+del "C:\Program Files (x86)\Common Files\BattlEye\BEService_fn.exe" /f
+del "C:\Users\%username%\AppData\Local\AMD\CN\GameReport\FortniteClient-Win64-Shipping.exe\gpa.bin" /f
+del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451b49097cdafa85ec0f45214d6b0df9e8d.bin" /f
+del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451e900a9bc20b57cd2f45214d6b0df9e8d.bin" /f
+del "C:\Users\%username%\AppData\Local\AMD\cl.cache\x64\Version 2.1 AMD-APP (3380.6).Ellesmere.cache" /f
+del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_67DF&SUBSYS_C580&REV_E7.idx" /f
+del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021
 
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
