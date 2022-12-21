@@ -1,19 +1,27 @@
+@echo off
 
-@ ECHO.
-pause
-@ ECHO.
-echo Cleaning Process...... 
+rem This script is designed to kill certain processes, stop a service, and delete a number of files and folders.
+rem It is important to be careful when running scripts, as they can have unintended consequences if not used correctly.
+
+echo Cleaning Process......
 timeout /t 02 >nul
-@ ECHO.
-taskkill /f /im smartscreen.exe /im EasyAntiCheat.exe /im DNF.exe /im CrossProxy.exe /im tensafe_1.exe /im TenSafe_1.exe /im tensafe_2.exe /im tencentdl.exe /im TenioDL.exe /im uishell.exe /im BackgroundDownloader.exe /im conime.exe /im QQDL.EXE /im qqlogin.exe /im dnfchina.exe /im dnfchinatest.exe /im dnf.exe /im txplatform.exe /im TXPlatform.exe /im OriginWebHelperService.exe /im OriginER.exe /im OriginThinSetupInternal.exe /im OriginLegacyCLI.exe /im Agent.exe /im Client.exe /im Discord /im EA.exe
-@ ECHO.
-echo Stopping EasyAntiCheat Service......
-Sc stop EasyAntiCheat
-@ ECHO.
-echo Cleaning Files......(please be patient)
-timeout /t 02 >null
 
+rem Kill the specified processes.
+taskkill /f /im smartscreen.exe /im EasyAntiCheat.exe /im DNF.exe /im CrossProxy.exe /im tensafe_1.exe /im TenSafe_1.exe /im tensafe_2.exe /im tencentdl.exe /im TenioDL.exe /im uishell.exe /im BackgroundDownloader.exe /im conime.exe /im QQDL.EXE /im qqlogin.exe /im dnfchina.exe /im dnfchinatest.exe /im dnf.exe /im txplatform.exe /im TXPlatform.exe /im OriginWebHelperService.exe /im OriginER.exe /im OriginThinSetupInternal.exe /im OriginLegacyCLI.exe /im Agent.exe /im Client.exe /im Discord /im EA.exe
+
+echo Stopping EasyAntiCheat Service......
+
+rem Stop the EasyAntiCheat service.
+sc stop EasyAntiCheat
+
+echo Cleaning Files......(please be patient)
+timeout /t 02 >nul
+
+rem Delete the specified files and folders.
 del /f /s /q /a:h /a:a "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*" "%systemdrive%\ProgramData\Electronic Arts\EA Services\License\*.*" "%systemdrive%\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.sys" "%systemdrive%\Program Files (x86)\Origin\*.log" "%systemdrive%\Program Files (x86)\Origin\EAProxyInstaller.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy64.exe" "%systemdrive%\Program Files (x86)\Origin\OriginCrashReporter.exe" "%systemdrive%\Program Files (x86)\Origin\OriginER.exe" "%systemdrive%\Program Files (x86)\Origin\OriginWebHelper.exe" "%systemdrive%\Windows\System32\eac_usermode_*.dll" "%username%\AppData\LocalLow\DNF\*.trc" "%username%\AppData\LocalLow\DNF\*.zip" "%username%\AppData\Local\g3\Saved\SaveGames\SaveSettings.sav" "%username%\AppData\Local\g3\Saved\SaveGames\*.*" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\GameUserSettings.ini" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\Game.ini" "%username%\AppData\Local\g3\Saved\Logs\*.log" "%username%\AppData\Local\g3\Saved\Screenshots\*.png"
+
+echo Done.
+
 
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
