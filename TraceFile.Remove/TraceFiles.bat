@@ -759,33 +759,20 @@ rmdir /s /q "Z:\Recovery"
 @del /s /f /a:h /a:a /q "Z:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "Z:\MSOCache"
 
-rd /q /s %systemdrive%\$Recycle.Bin
-rd /q /s A:\$Recycle.Bin
-rd /q /s B:\$Recycle.Bin
-rd /q /s C:\$Recycle.Bin
-rd /q /s D:\$Recycle.Bin
-rd /q /s E:\$Recycle.Bin
-rd /q /s F:\$Recycle.Bin
-rd /q /s G:\$Recycle.Bin
-rd /q /s H:\$Recycle.Bin
-rd /q /s I:\$Recycle.Bin
-rd /q /s J:\$Recycle.Bin
-rd /q /s K:\$Recycle.Bin
-rd /q /s L:\$Recycle.Bin
-rd /q /s M:\$Recycle.Bin
-rd /q /s N:\$Recycle.Bin
-rd /q /s O:\$Recycle.Bin
-rd /q /s P:\$Recycle.Bin
-rd /q /s Q:\$Recycle.Bin
-rd /q /s R:\$Recycle.Bin
-rd /q /s S:\$Recycle.Bin
-rd /q /s T:\$Recycle.Bin
-rd /q /s U:\$Recycle.Bin
-rd /q /s V:\$Recycle.Bin
-rd /q /s W:\$Recycle.Bin
-rd /q /s X:\$Recycle.Bin
-rd /q /s Y:\$Recycle.Bin
-rd /q /s Z:\$Recycle.Bin
+echo This script will delete the recycle bin on all drives.
+echo THIS ACTION CANNOT BE UNDONE.
+echo Are you sure you want to proceed?
+echo.
+echo To proceed, type YES and press enter.
+echo To cancel, press any other key and then enter.
+echo.
+set /p confirmation=
+if "%confirmation%" == "YES" (
+  for /d %%d in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
+    if exist %%d:\$Recycle.Bin rd /q /s %%d:\$Recycle.Bin
+  )
+  if exist %systemdrive%\$Recycle.Bin rd /q /s %systemdrive%\$Recycle.Bin
+)
 
 @ ECHO.
 
