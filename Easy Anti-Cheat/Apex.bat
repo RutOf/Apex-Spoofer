@@ -17,6 +17,7 @@ taskkill /f /im OriginER.exe
 taskkill /f /im OriginThinSetupInternal.exe
 taskkill /f /im OriginLegacyCLI.exe
 
+reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /va /f
