@@ -4,13 +4,20 @@
 ![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
  
  
-### 💎 〢 HOW TO USE:
-- When you create a new account You will no longer be banned. 
-- Scroll down the text to watch the video. 
+### 💎 〢 Use
+
+- It will delete almost all Origin files
+- If there are important files, please move them to another folder.
+- You can check it.
+
+
   
-#### 📂 〢 New Folder 
+### New Folder 
+
 - We added a folder " **Easy Anti-Cheat** " to allow additional numbers to be changed.
 - After using the trace file deletion successfully You can use this folder as the next step.
+
+
 ```sh-session 
 USING APEX.BAT >> CLEANER.BAT >> R6S.BAT | AFTER FINISH , RESTART PC AND JOIN GAME AGAIN " WORKING " 
 ```
@@ -20,44 +27,8 @@ USING APEX.BAT >> CLEANER.BAT >> R6S.BAT | AFTER FINISH , RESTART PC AND JOIN GA
    
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
 
-
 ---
 
-  <p align="center">
-    <a href="https://discord.com/users/943374631644045363">
-        <img title="Fnoberz server discord" alt="Fnoberz's discord" src="https://discord.c99.nl/widget/theme-4/943374631644045363.png"/>
-    </a>
-</p>  
- 
-### 💬 ・HELP & SUPPORT | [Discord](https://discord.gg/MBTkVcJefp) 
-
-
- ### 🛒〢 `PRIVATE CHEAT`
- More Here [Information](https://github.com/Club-CC/Detail)
- 
-<table>
-<tr>
-	<td> PRIVATE CHEAT
-	<td> SPOOFER
-	<td> SOURCE CODE
-</table>
-
-  
-### 🎯 〢 Product Cheat
-
-- Lifetime + Update Free
-- Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
-- Undetected and can be played on the main account.
-
-
-### 💯〢 Warranty Product.
-
-- Support 24 Hr + Update Free
-- IF Banned = REFUND
-
-A website that I created to introduce myself from start to finish. hope you like it [Slackes.me](http://slackes.me/)
-
----
 
 
 ### This is the best cleaner I've ever made.
@@ -117,6 +88,43 @@ There are many free spoofing methods (even permanent ones) google will be your b
 ### Will this unban my account?
 
 > No, there is no UNBAN TOOL so stop looking for one. Just follow the steps explained make a new account and enjoy.
+
+--- 
+
+  <p align="center">
+    <a href="https://discord.gg/MBTkVcJefp">
+        <img title="Slackes server discord" alt="Slackes discord" src="https://discordapp.com/api/guilds/880135738077896764/widget.png?style=banner2"/>
+    </a>
+</p> 
+ 
+## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
+
+ ### 🛒〢 `PRODUCT`
+ 
+<table>
+<tr>
+	<td> PRIVATE CHEAT
+	<td> SPOOFER
+	<td> SOURCE CODE
+</table>
+
+  
+### 🥊 〢 Private Cheat
+
+- Lifetime 
+- Free Updates 
+- Undetected
+- Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
+
+### ⚓〢 Warranty
+
+- Support 24 Hr
+- Update Free
+- If banned = `REFUND`
+
+A website that I created to introduce myself from start to finish. hope you like it [Slackes.me](http://slackes.me/)
+
+---
 
 
 <h2 align="center"> Copyright © 2021 - 2022
