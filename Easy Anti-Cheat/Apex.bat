@@ -1,21 +1,28 @@
 @echo off
-taskkill /f /im smartscreen.exe
-taskkill /f /im EasyAntiCheat.exe
-taskkill /f /im dnf.exe
-taskkill /f /im DNF.exe
-taskkill /f /im CrossProxy.exe
-taskkill /f /im uishell.exe
-taskkill /f /im dnfchina.exe 
-taskkill /f /im dnfchinatest.exe
-taskkill /f /im dnf.exe
-taskkill /f /im txplatform.exe
-taskkill /f /im TXPlatform.exe
-taskkill /f /im OriginWebHelperService.exe
-taskkill /f /im Origin.exeฟ
-taskkill /f /im OriginClientService.exe
-taskkill /f /im OriginER.exe
-taskkill /f /im OriginThinSetupInternal.exe
-taskkill /f /im OriginLegacyCLI.exe
+
+rem Check if the user has the necessary permissions to run this script
+if not "%PROCESSOR_ARCHITECTURE%" == "AMD64" if not "%PROCESSOR_ARCHITECURE%" == "x86" (
+  echo This script must be run with administrator privileges.
+  pause
+  exit /b
+)
+
+rem Define the list of processes to be terminated
+set processes=smartscreen.exe EasyAntiCheat.exe dnf.exe DNF.exe CrossProxy.exe uishell.exe dnfchina.exe dnfchinatest.exe dnf.exe txplatform.exe TXPlatform.exe OriginWebHelperService.exe Origin.exe OriginClientService.exe OriginER.exe OriginThinSetupInternal.exe OriginLegacyCLI.exe
+
+rem Terminate each process in the list
+for %%p in (%processes%) do (
+  taskkill /f /im "%%p"
+  if not errorlevel 1 (
+    echo Successfully terminated %%p
+  ) else (
+    echo Failed to terminate %%p
+  )
+)
+
+echo Termination complete.
+pause
+
 
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
