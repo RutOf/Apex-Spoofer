@@ -1,28 +1,60 @@
+
 @echo off
-
-rem This script is designed to kill certain processes, stop a service, and delete a number of files and folders.
-rem It is important to be careful when running scripts, as they can have unintended consequences if not used correctly.
-
+title Origin/Apex/EAC Cleaner
+color C
+@ ECHO.
+@ ECHO :'######::'##::::::::::'###:::::'######::'##:::'##:'########::'######::
+@ ECHO '##... ##: ##:::::::::'## ##:::'##... ##: ##::'##:: ##.....::'##... ##:
+@ ECHO  ##:::..:: ##::::::::'##:. ##:: ##:::..:: ##:'##::: ##::::::: ##:::..::
+@ ECHO . ######:: ##:::::::'##:::. ##: ##::::::: #####:::: ######:::. ######::
+@ ECHO :..... ##: ##::::::: #########: ##::::::: ##. ##::: ##...:::::..... ##:
+@ ECHO '##::: ##: ##::::::: ##.... ##: ##::: ##: ##:. ##:: ##:::::::'##::: ##:
+@ ECHO . ######:: ########: ##:::: ##:. ######:: ##::. ##: ########:. ######::
+@ ECHO :......:::........::..:::::..:::......:::..::::..::........:::......:::
+@ ECHO ------------------------------------------------------------------------------------------------------------------------
+@ ECHO                  	             Ready... Press any key to Clean your System
+@ ECHO ------------------------------------------------------------------------------------------------------------------------
+@ ECHO.
+pause
+@ ECHO.
 echo Cleaning Process......
 timeout /t 02 >nul
-
-rem Kill the specified processes.
-taskkill /f /im smartscreen.exe /im EasyAntiCheat.exe /im DNF.exe /im CrossProxy.exe /im tensafe_1.exe /im TenSafe_1.exe /im tensafe_2.exe /im tencentdl.exe /im TenioDL.exe /im uishell.exe /im BackgroundDownloader.exe /im conime.exe /im QQDL.EXE /im qqlogin.exe /im dnfchina.exe /im dnfchinatest.exe /im dnf.exe /im txplatform.exe /im TXPlatform.exe /im OriginWebHelperService.exe /im OriginER.exe /im OriginThinSetupInternal.exe /im OriginLegacyCLI.exe /im Agent.exe /im Client.exe /im Discord /im EA.exe
-
+@ ECHO.
+taskkill /f /im smartscreen.exe
+taskkill /f /im EasyAntiCheat.exe
+taskkill /f /im dnf.exe
+taskkill /f /im DNF.exe
+taskkill /f /im CrossProxy.exe
+taskkill /f /im tensafe_1.exe
+taskkill /f /im TenSafe_1.exe
+taskkill /f /im tensafe_2.exe
+taskkill /f /im tencentdl.exe
+taskkill /f /im TenioDL.exe
+taskkill /f /im uishell.exe
+taskkill /f /im BackgroundDownloader.exe
+taskkill /f /im conime.exe
+taskkill /f /im QQDL.EXE
+taskkill /f /im qqlogin.exe
+taskkill /f /im dnfchina.exe
+taskkill /f /im dnfchinatest.exe
+taskkill /f /im dnf.exe
+taskkill /f /im txplatform.exe
+taskkill /f /im TXPlatform.exe
+taskkill /f /im OriginWebHelperService.exe
+taskkill /f /im Origin.exe
+taskkill /f /im OriginClientService.exe
+taskkill /f /im OriginER.exe
+taskkill /f /im OriginThinSetupInternal.exe
+taskkill /f /im OriginLegacyCLI.exe
+taskkill /f /im Agent.exe
+taskkill /f /im Client.exe
+@ ECHO.
 echo Stopping EasyAntiCheat Service......
-
-rem Stop the EasyAntiCheat service.
-sc stop EasyAntiCheat
-
+Sc stop EasyAntiCheat
+@ ECHO.
 echo Cleaning Files......(please be patient)
-timeout /t 02 >nul
-
-rem Delete the specified files and folders.
-del /f /s /q /a:h /a:a "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*" "%systemdrive%\ProgramData\Electronic Arts\EA Services\License\*.*" "%systemdrive%\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.sys" "%systemdrive%\Program Files (x86)\Origin\*.log" "%systemdrive%\Program Files (x86)\Origin\EAProxyInstaller.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy.exe" "%systemdrive%\Program Files (x86)\Origin\igoproxy64.exe" "%systemdrive%\Program Files (x86)\Origin\OriginCrashReporter.exe" "%systemdrive%\Program Files (x86)\Origin\OriginER.exe" "%systemdrive%\Program Files (x86)\Origin\OriginWebHelper.exe" "%systemdrive%\Windows\System32\eac_usermode_*.dll" "%username%\AppData\LocalLow\DNF\*.trc" "%username%\AppData\LocalLow\DNF\*.zip" "%username%\AppData\Local\g3\Saved\SaveGames\SaveSettings.sav" "%username%\AppData\Local\g3\Saved\SaveGames\*.*" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\GameUserSettings.ini" "%username%\AppData\Local\g3\Saved\Config\WindowsNoEditor\Game.ini" "%username%\AppData\Local\g3\Saved\Logs\*.log" "%username%\AppData\Local\g3\Saved\Screenshots\*.png"
-
-echo Done.
-
-
+timeout /t 02 >nul 
+@ ECHO.
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
 rmdir /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\"
@@ -44,6 +76,7 @@ rmdir /s /q "%username%\AppData\Local\g3"
 del /f /s /q "%username%\AppData\Local\g3\*.*"
 del /f /s /q "%username%\AppData\Local\g3\Saved\SaveGames\SaveSettings.sav"
 del /f /s /q "%username%\AppData\Local\g3\Saved\SaveGames\*.*"
+rmdir /s /a:h /a:a /q "%username%\AppData\Local\g3\"
 del /s /f /a:h /a:a /q "%username%\AppData\Local\g3\*.*"
 del /s /f /a:h /a:a /q "%username%\AppData\Local\g3\Saved\SaveGames\SaveSettings.sav"
 del /s /f /a:h /a:a /q "%username%\AppData\Local\g3\Saved\SaveGames\*.*"
@@ -101,6 +134,7 @@ RD %windir%\$hf_mig$ /Q /S
 dir %windir%\$NtUninstall* /a:d /b >%windir%\2950800.txt
 del "C:\Recovery\ntuser.sys"
 del "C:\MSOCache" /p
+del "C:\Users\Public\Shared Files"
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
 erase "%LOCALAPPDATA%\Microsoft\Windows\Tempor~1\*.*" /f /s /q
 rmdir /s /q "%systemdrive%\ProgramData\Microsoft\DataMart\PaidWiFi\NetworksCache\*.*"
@@ -115,29 +149,7 @@ rmdir /s /q "%systemdrive%\Users\caspue\AppData\Local\Packages\*.*"
 rmdir /s /q "%systemdrive%\Users\caspue\AppData\Local\Speech Graphics\Carnival\*.*"
 rmdir /s /q "%systemdrive%\ProgramData\USOPrivate\UpdateStore\*.*"
 rmdir /s /q "%systemdrive%\ProgramData\USOShared\Logs\*.*"
-
-
 netsh interface set interface "Local Area Connection" disable
-netsh advfirewall reset
-
-
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\EpicGamesLauncher"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\FortniteGame"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\Epic Games"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\NVIDIA Corporation"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\AMD"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Roaming\EasyAntiCheat"
-RMDIR /S /Q "%systemdrive%\ProgramData\Epic\EpicOnlineServices"
-RMDIR /S /Q "%systemdrive%\Program Files (x86)\Epic Games\Epic Online Services\service"
-RMDIR /S /Q "%systemdrive%\Program Files\Epic Games\Fortnite\FortniteGame\Binaries\Win64\Shared Files"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngine"
-RMDIR /S /Q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngineLauncher"
-RMDIR /S /Q "C:\Program Files (x86)\Common Files\BattlEye"
-RMDIR /S /Q "C:\Program Files (x86)\EasyAntiCheat"
-RMDIR /S /Q "C:\ProgramData\Epic\EpicGamesLauncher\Data\EMS\current"
-RMDIR /S /Q "C:\ProgramData\Epic\UnrealEngineLauncher\LauncherInstalled.dat"
-RMDIR /S /Q "C:\Users\All Users\Epic\EpicGamesLauncher\Data\EMS\current"
-RMDIR /S /Q "C:\Users\All Users\Epic\UnrealEngineLauncher\LauncherInstalled.dat"
 RD /s /q "C:\Users\%Username%\AppData\Local\CEF"
 RD /s /q "C:\Users\%Username%\AppData\Local\Comms"
 RD /s /q "C:\Users\%Username%\AppData\Local\ConnectedDevicesPlatform"
@@ -539,51 +551,14 @@ rmdir /s /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\Logs"
 rmdir /s /q "%systemdrive%\Windows\System32\spp\store\2.0\cache"
 rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\AC"
 rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\MicrosoftEdge\SharedCacheContainers"
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\User\Default\Recovery\Active\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\#!002\MicrosoftEdge\User\Default\AppCache\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\Autom\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\rescache\_merged\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\ntuser.dat.LOG1\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\ntuser.dat.LOG2\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\OneDrive\settings\Personal\logUploaderSettings_temp.ini\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\OneDrive\settings\Personal\logUploaderSettings.ini\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\sru\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\OneDrive\logs\Common\DeviceHealthSummaryConfiguration.ini\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppData\Local\Microsoft\XboxLive\AuthStateCache.dat\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\BBI.LOG1\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\BBI.LOG2\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\DEFAULT.LOG2\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\Logs\MoSetup\UpdateAgent.log\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\SoftwareDistribution\PostRebootEventCache.V2\{323558A6-0300-4C3E-97A0-EDEDFEB96B00}.bin\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\TempState\CortanaUnifiedTileModelCache.dat\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\SettingSync\metastore\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\INetCache\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\LogFiles\WMI\RtBackup\EtwRTGraphicsPerfMonitorSession.etl\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK\*.*" >nul 2>&1
-@del /s /f /a:h /a:a /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\Logs\*.*" >nul 2>&1
 rd /q /s %systemdrive%\$Recycle.Bin
 rmdir /s /q "A:\Recovery"
 @del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "A:\MSOCache"
+rmdir /s /q "A:\Recovery"
 @del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "A:\MSOCache"
 
-reg delete "HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" /f
-reg delete "HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags" /f
-reg delete "HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\BagMRU" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Store" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Persisted" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\MUICache" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRULegacy" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU" /f
-reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist" /f
-
-
 rmdir /s /q "B:\Recovery"
 @del /s /f /a:h /a:a /q "B:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "B:\MSOCache"
@@ -759,24 +734,42 @@ rmdir /s /q "Z:\Recovery"
 @del /s /f /a:h /a:a /q "Z:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "Z:\MSOCache"
 
-echo This script will delete the recycle bin on all drives.
-echo THIS ACTION CANNOT BE UNDONE.
-echo Are you sure you want to proceed?
-echo.
-echo To proceed, type YES and press enter.
-echo To cancel, press any other key and then enter.
-echo.
-set /p confirmation=
-if "%confirmation%" == "YES" (
-  for /d %%d in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
-    if exist %%d:\$Recycle.Bin rd /q /s %%d:\$Recycle.Bin
-  )
-  if exist %systemdrive%\$Recycle.Bin rd /q /s %systemdrive%\$Recycle.Bin
-)
+rd /q /s %systemdrive%\$Recycle.Bin
+rd /q /s A:\$Recycle.Bin
+rd /q /s B:\$Recycle.Bin
+rd /q /s C:\$Recycle.Bin
+rd /q /s D:\$Recycle.Bin
+rd /q /s E:\$Recycle.Bin
+rd /q /s F:\$Recycle.Bin
+rd /q /s G:\$Recycle.Bin
+rd /q /s H:\$Recycle.Bin
+rd /q /s I:\$Recycle.Bin
+rd /q /s J:\$Recycle.Bin
+rd /q /s K:\$Recycle.Bin
+rd /q /s L:\$Recycle.Bin
+rd /q /s M:\$Recycle.Bin
+rd /q /s N:\$Recycle.Bin
+rd /q /s O:\$Recycle.Bin
+rd /q /s P:\$Recycle.Bin
+rd /q /s Q:\$Recycle.Bin
+rd /q /s R:\$Recycle.Bin
+rd /q /s S:\$Recycle.Bin
+rd /q /s T:\$Recycle.Bin
+rd /q /s U:\$Recycle.Bin
+rd /q /s V:\$Recycle.Bin
+rd /q /s W:\$Recycle.Bin
+rd /q /s X:\$Recycle.Bin
+rd /q /s Y:\$Recycle.Bin
+rd /q /s Z:\$Recycle.Bin
 
 @ ECHO.
 
-
+REG DELETE "HKCU\Software\Electronic Arts\EA Core\Staging\194908\ergc" /f
+REG DELETE "HKCU\Software\Electronic Arts" /f
+REG DELETE "HKLM\SOFTWARE\Respawn\Apex\Product GUID" /f
+REG DELETE "HKLM\SOFTWARE\Classes\origin" /f
+REG DELETE "HKLM\SOFTWARE\Classes\origin2" /f
+REG DELETE "HKCR\origin" /f
 REG DELETE "HKCR\origin2" /f
 REG DELETE "HKCR\Applications\Origin.exe" /f  
 REG DELETE "HKLM\SOFTWARE\Classes\Applications\Origin.exe" /f 
@@ -906,7 +899,9 @@ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateReposit
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageFullName: "Microsoft.XboxGameOverlay_1.41.24001.0_neutral_split.scale-100_8wekyb3d8bbwe"" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageFamily: 0x0000004E" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageType: 0x00000004" /f
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Flags: 0x00000000" /fREG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Volume: 0x00000001" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Flags: 0x00000000" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\PackageOrigin: 0x00000003" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\Volume: 0x00000001" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\InstalledLocation: "C:\Program Files\WindowsApps\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_split.scale-100_8wekyb3d8bbwe"" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\Package\Data\182\_IndexKeys:  50 61 63 6B 61 67 65 46 61 6D 69 6C 79 5C 34 65 5C 31 38 32 00 50 61 63 6B 61 67 65 46 75 6C 6C 4E 61 6D 65 5C 4D 69 63 72 6F 73 6F 66 74 2E 58 62 6F 78 47 61 6D 65 4F 76 65 72 6C 61 79 5F 31 2E 34 31 2E 32 34 30 30 31 2E 30 5F 6E 65 75 74 72 61 6C 5F 73 70 6C 69 74 2E 73 63 61 6C 65 2D 31 30 30 5F 38 77 65 6B 79 62 33 64 38 62 62 77 65 00 00" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a80\Package: 0x00000180" /f
@@ -1051,27 +1046,6 @@ echo Reset TCP/IP:
 netsh int ip reset 
 netsh int ipv4 reset 
 netsh int ipv6 reset 
-reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /va /f 
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v ctfmon.exe /d C:\WINDOWS\system32\ctfmon.exe 
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg" /f 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" /v command /d ""C:\WINDOWS\IME\imjp8_1\IMJPMIG.EXE" /Spoil /RemAdvDef /Migration32" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" /v hkey /d HKLM 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" /v inimapping /d 0 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" /v item /d IMJPMIG 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\IMJPMIG8.1" /v key /d SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" /v command /d "C:\WINDOWS\system32\IME\TINTLGNT\TINTSETP.EXE /IMEName" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" /v hkey /d HKLM 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" /v inimapping /d 0 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" /v item /d TINTSETP 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002A" /v key /d SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" /v command /d ""C:\WINDOWS\IME\imjp8_1\IMJPMIG.EXE" /Spoil /RemAdvDef /Migration32" 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" /v hkey /d HKLM 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" /v inimapping /d 0 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" /v item /d TINTSETP 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\startupreg\PHIME2002ASync" /v key /d SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
 
 @ ECHO.
 @ ECHO.
@@ -1140,12 +1114,27 @@ netsh advfirewall reset
 @ ECHO.
 @ ECHO.
 @ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
 echo                 				System cleaned successfully
 @ ECHO.
 echo  		You Can Now Launch Origin *Note That Apex Will Start Verifying Game Files by Itself*
 @ ECHO.
 @ ECHO.
 echo. & pause
+
 
 
 
