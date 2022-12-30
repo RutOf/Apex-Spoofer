@@ -8,7 +8,7 @@
 
 - It will delete almost all Origin files
 - If there are important files, please move them to another folder.
-- You can check it.
+- You can check it. 
 
 
   
