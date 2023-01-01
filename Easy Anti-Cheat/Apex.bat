@@ -23,7 +23,6 @@ for %%p in (%processes%) do (
 echo Termination complete.
 pause
 
-
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
