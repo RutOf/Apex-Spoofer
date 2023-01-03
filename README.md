@@ -3,7 +3,7 @@
 ![File](https://img.shields.io/badge/BATCH_FILES-EFA00B?style=for-the-badge&logo=IntelliJ+IDEA&logoColor=black)
 ![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
  
- 
+  
 ### 💎 〢 Use
 
 - It will delete almost all Origin files
