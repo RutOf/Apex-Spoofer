@@ -1,29 +1,43 @@
-## APEX SPOOFER 
-![VS](https://img.shields.io/badge/Visual_Studio_Codde-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![File](https://img.shields.io/badge/BATCH_FILES-EFA00B?style=for-the-badge&logo=IntelliJ+IDEA&logoColor=black)
-![Windows](https://img.shields.io/badge/-Winodows-28C2FF?style=for-the-badge&logo=windows&logoColor=blue)
- 
-  
-### 💎 〢 Use
+<h1 align="center">
+  Apex Spoofer ➰
+</h1>
 
-- It will delete almost all Origin files
-- If there are important files, please move them to another folder.
-- You can check it. 
+<p align="center">
+  Removed the ban tracking file from EAC.
+</p>
 
 
-  
-### New Folder 
 
-- We added a folder " **Easy Anti-Cheat** " to allow additional numbers to be changed.
-- After using the trace file deletion successfully You can use this folder as the next step.
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/Slackes/Apex-Spoofer?style=flat-square"/>
+  <img src="https://img.shields.io/github/last-commit/Slackes/Apex-Spoofer?style=flat-square"/>
+  <img src="https://img.shields.io/github/stars/Slackes/Apex-Spoofer?color=5ac18e&label=Stars&style=flat-square"/>
+
+</p>
+
+---
+
+## <a id="content"></a>📜 〢 Read
+
+- We have written detailed instructions for use. including changing the number please read carefully to prevent confusion
+- Once everything is done, it is advisable to use TMAC to change the IP address.
+
+## <a id="setup"></a> 📁 〢 Install
+
+Order the steps to use as follows.
+
+1. Using TraceFiles.bat
+2. Apex.bat
+3. Cleaner.bat
+4. Uninstall EA & Apex 
+5. After done, Restart your PC and apply for a new account.
 
 
-```sh-session 
-USING APEX.BAT >> CLEANER.BAT >> R6S.BAT | AFTER FINISH , RESTART PC AND JOIN GAME AGAIN " WORKING " 
-```
-        
-    
-    
+## <a id="setup2"></a> 📞 〢 Support
+- If you have any questions or don't understand the instructions, join Discord for help.
+- [Discord](https://discord.gg/MBTkVcJefp)
+
+---
    
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
 
@@ -126,6 +140,9 @@ A website that I created to introduce myself from start to finish. hope you like
 
 ---
 
+  <br>
 
-<h2 align="center"> Copyright © 2021 - 2022
+<p align="center">
+  Copyright © 2021 - 2022
+<br>
 
