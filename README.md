@@ -34,9 +34,9 @@ Order the steps to use as follows.
 
 
 ## <a id="setup2"></a> 📞 〢 Support
+- If the free version does not work The last option is to pay. Read more below.
 - If you have any questions or don't understand the instructions, join Discord for help.
 - [Discord](https://discord.gg/MBTkVcJefp)
-
 ---
    
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
