@@ -33,10 +33,11 @@ Order the steps to use as follows.
 5. After done, Restart your PC and apply for a new account.
 
 
-## <a id="setup2"></a> 📞 〢 Support
-- If the free version does not work The last option is to pay. Read more below.
-- If you have any questions or don't understand the instructions, join Discord for help.
-- [Discord](https://discord.gg/MBTkVcJefp)
+## <a id="setup2"></a> 🗒 〢 Product
+- If the free version does not work You can pay to buy a personal project.
+- Safe  on main account without getting banned / no need to turn off virus scan Scroll down to the bottom to read more.
+- [Discord](https://discord.gg/MBTkVcJefp) 
+
 ---
    
 https://user-images.githubusercontent.com/94861415/179343981-02684167-9086-4326-8cdb-ef0ec4022263.mp4
@@ -113,7 +114,7 @@ There are many free spoofing methods (even permanent ones) google will be your b
  
 ## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
 
- ### 🛒〢 `PRODUCT`
+ ### 🛒〢 `SHOP`
  
 <table>
 <tr>
@@ -130,7 +131,7 @@ There are many free spoofing methods (even permanent ones) google will be your b
 - Undetected
 - Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers)`
 
-### ⚓〢 Warranty
+### 📌〢 Warranty
 
 - Support 24 Hr
 - Update Free
