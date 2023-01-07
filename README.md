@@ -1,5 +1,5 @@
 <h1 align="center">
-  Apex Spoofer ➰
+  APEX Spoofer ➰
 </h1>
 
 <p align="center">
