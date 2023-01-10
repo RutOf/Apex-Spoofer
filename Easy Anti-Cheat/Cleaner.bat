@@ -1,10 +1,55 @@
 @echo off
-@shift /0
-taskkill /f /im "FortniteLauncher.exe" /t /fi "status eq running">nul
-taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t /fi "status eq running">nul
-taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t /fi "status eq running">nul
-taskkill /f /im "EasyAntiCheat.exe" /t /fi "status eq running">nul
-reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
+
+rem Check if FortniteLauncher.exe is running
+rem and end the process if it is
+tasklist /fi "imagename eq FortniteLauncher.exe" 2>NUL | find /i "FortniteLauncher.exe" >NUL
+if %errorlevel% == 0 (
+    taskkill /f /im "FortniteLauncher.exe" /t 
+    echo FortniteLauncher.exe process ended.
+) else (
+    echo FortniteLauncher.exe not running.
+)
+
+rem Check if FortniteClient-Win64-Shipping_BE.exe is running
+rem and end the process if it is
+tasklist /fi "imagename eq FortniteClient-Win64-Shipping_BE.exe" 2>NUL | find /i "FortniteClient-Win64-Shipping_BE.exe" >NUL
+if %errorlevel% == 0 (
+    taskkill /f /im "FortniteClient-Win64-Shipping_BE.exe" /t
+    echo FortniteClient-Win64-Shipping_BE.exe process ended.
+) else (
+    echo FortniteClient-Win64-Shipping_BE.exe not running.
+)
+
+rem Check if FortniteClient-Win64-Shipping.exe is running
+rem and end the process if it is
+tasklist /fi "imagename eq FortniteClient-Win64-Shipping.exe" 2>NUL | find /i "FortniteClient-Win64-Shipping.exe" >NUL
+if %errorlevel% == 0 (
+    taskkill /f /im "FortniteClient-Win64-Shipping.exe" /t
+    echo FortniteClient-Win64-Shipping.exe process ended.
+) else (
+    echo FortniteClient-Win64-Shipping.exe not running.
+)
+
+rem Check if EasyAntiCheat.exe is running
+rem and end the process if it is
+tasklist /fi "imagename eq EasyAntiCheat.exe" 2>NUL | find /i "EasyAntiCheat.exe" >NUL
+if %errorlevel% == 0 (
+    taskkill /f /im "EasyAntiCheat.exe" /t
+    echo EasyAntiCheat.exe process ended.
+) else (
+    echo EasyAntiCheat.exe not running.
+)
+
+rem Check if the specified registry key exists
+rem and delete it if it does
+reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" >NUL
+if %errorlevel% == 0 (
+    reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
+    echo EasyAntiCheat registry key deleted.
+) else (
+    echo EasyAntiCheat registry key not found.
+)
+
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
 reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /va /f 
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
