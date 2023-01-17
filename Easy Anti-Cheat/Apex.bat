@@ -18,7 +18,7 @@ for %%p in (%processes%) do (
   ) else (
     echo Failed to terminate %%p
   )
-)
+) 
 
 echo Termination complete.
 pause
