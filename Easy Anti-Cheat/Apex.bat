@@ -1,82 +1,60 @@
+
 @echo off
-
-rem Check if the user has the necessary permissions to run this script
-if not "%PROCESSOR_ARCHITECTURE%" == "AMD64" if not "%PROCESSOR_ARCHITECURE%" == "x86" (
-  echo This script must be run with administrator privileges.
-  pause
-  exit /b
-)
-
-rem Define the list of processes to be terminated
-set processes=smartscreen.exe EasyAntiCheat.exe dnf.exe DNF.exe CrossProxy.exe uishell.exe dnfchina.exe dnfchinatest.exe dnf.exe txplatform.exe TXPlatform.exe OriginWebHelperService.exe Origin.exe OriginClientService.exe OriginER.exe OriginThinSetupInternal.exe OriginLegacyCLI.exe
-
-rem Terminate each process in the list
-for %%p in (%processes%) do (
-  taskkill /f /im "%%p"
-  if not errorlevel 1 (
-    echo Successfully terminated %%p
-  ) else (
-    echo Failed to terminate %%p
-  )
-) 
-
-echo Termination complete.
+title Origin/Apex/EAC Cleaner
+color C
+@ ECHO.
+@ ECHO.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Origin/Apex/EAC Cleaner (Slackes) ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@ ECHO.
+@ ECHO                                  This will Log you out so please write down your login
+@ ECHO.
+@ ECHO               	! GAME WILL NOW VERIFY ITSELF UPON LOGGING IN, NO NEED TO RESTART PC ANYMORE EITHER !
+@ ECHO.
+@ ECHO.						 ERRORS ARE NORMAL 
+@ ECHO.
+@ ECHO ------------------------------------------------------------------------------------------------------------------------
+@ ECHO                  	             Ready... Press any key to Clean your System
+@ ECHO ------------------------------------------------------------------------------------------------------------------------
+@ ECHO.
 pause
-
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
-reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /va /f
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
-reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /va /f
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /va /f
-del "C:\Program Files (x86)\Common Files\BattlEye\BEService.exe" /f
-del "C:\Program Files (x86)\Common Files\BattlEye\BEService_fn.exe" /f
-del "C:\Users\%username%\AppData\Local\AMD\CN\GameReport\FortniteClient-Win64-Shipping.exe\gpa.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451b49097cdafa85ec0f45214d6b0df9e8d.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451e900a9bc20b57cd2f45214d6b0df9e8d.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\cl.cache\x64\Version 2.1 AMD-APP (3380.6).Ellesmere.cache" /f
-del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_67DF&SUBSYS_C580&REV_E7.idx" /f
-del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_67DF&SUBSYS_C580&REV_E7.lock" /f
-del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_67DF&SUBSYS_C580&REV_E7.val" /f
-del "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK\FortniteClient-Win64-Shipping_12856.log" /f
-del "C:\Users\%username%\AppData\Local\Temp\171cac9.tmp" /f
-del "C:\Users\%username%\AppData\Local\UnrealEngine\Common\Analytics\8E1D46DBC38F4A789939D781E1B91520" /f
-del "C:\Users\%username%\AppData\Local\CrashReportClient\Saved\Config\WindowsEditor\Engine.ini" /f
-del "C:\Users\%username%\AppData\Local\CrashReportClient\Saved\Logs\CrashReportClient.log" /f
-rmdir /q /s "C:\Users\%username%\AppData\Local\FortniteGame\"
-del "C:\Windows\Prefetch\BESERVICE.EXE-622E150D.pf" /f
-del "C:\Windows\Prefetch\CRASHREPORTCLIENT.EXE-C297728D.pf" /f
-del "C:\Windows\Prefetch\EASYANTICHEAT_SETUP.EXE-CF3441CE.pf" /f
-del "C:\Windows\Prefetch\FORTNITECLIENT-WIN64-SHIPPING-42C11B98.pf" /f
-del "C:\Windows\Prefetch\FORTNITECLIENT-WIN64-SHIPPING-5EAA410A.pf" /f
-del "C:\Windows\Prefetch\FORTNITELAUNCHER.EXE-AF00A2B5.pf" /f
-del "C:\Windows\Prefetch\RUNDLL32.EXE-F264FACF.pf" /f
-del "C:\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.exe" /f
-rmdir /q /s "C:\Program Files (x86)\Common Files\BattlEye"
-rmdir /q /s "C:\Users\%username%\AppData\Local\AMD\CN\GameReport"
-del "C:\Users\%username%\AppData\Local\AMD\CN\GameReport\FortniteClient-Win64-Shipping.exe" /f
-rmdir /q /s "C:\Users\%username%\AppData\Local\AMD\cl.cache"
-rmdir /q /s "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84"
-rmdir /q /s "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK"
-rmdir /q /s "C:\Users\%username%\AppData\Local\UnrealEngine\5.0"
-rmdir /q /s "C:\Users\%username%\AppData\Local\CrashReportClient"
-rmdir /q /s "C:\Users\%username%\AppData\Local\FortniteGame"
-
-rem Delete the specified files
-del "C:\Program Files (x86)\Common Files\BattlEye\BEService.exe" /f
-del "C:\Program Files (x86)\Common Files\BattlEye\BEService_fn.exe" /f
-del "C:\Users\%username%\AppData\Local\AMD\CN\GameReport\FortniteClient-Win64-Shipping.exe\gpa.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451b49097cdafa85ec0f45214d6b0df9e8d.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\DxCache\92b1da15789e5451e900a9bc20b57cd2f45214d6b0df9e8d.bin" /f
-del "C:\Users\%username%\AppData\Local\AMD\cl.cache\x64\Version 2.1 AMD-APP (3380.6).Ellesmere.cache" /f
-del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021_VEN_1002&DEV_67DF&SUBSYS_C580&REV_E7.idx" /f
-del "C:\Users\%username%\AppData\Local\D3DSCache\e4548a4577c56a84\52264C4C-172F-41B9-91B8-7F0C3B1E9021
-
-REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
-REG ADD HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName /v ComputerName /t REG_SZ /d %random% /f 1>nul 2>nul
-
-sc stop BEService
-
+@ ECHO.
+echo Cleaning Process......
+timeout /t 02 >nul
+@ ECHO.
+taskkill /f /im smartscreen.exe
+taskkill /f /im EasyAntiCheat.exe
+taskkill /f /im dnf.exe
+taskkill /f /im DNF.exe
+taskkill /f /im CrossProxy.exe
+taskkill /f /im tensafe_1.exe
+taskkill /f /im TenSafe_1.exe
+taskkill /f /im tensafe_2.exe
+taskkill /f /im tencentdl.exe
+taskkill /f /im TenioDL.exe
+taskkill /f /im uishell.exe
+taskkill /f /im BackgroundDownloader.exe
+taskkill /f /im conime.exe
+taskkill /f /im QQDL.EXE
+taskkill /f /im qqlogin.exe
+taskkill /f /im dnfchina.exe
+taskkill /f /im dnfchinatest.exe
+taskkill /f /im dnf.exe
+taskkill /f /im txplatform.exe
+taskkill /f /im TXPlatform.exe
+taskkill /f /im OriginWebHelperService.exe
+taskkill /f /im Origin.exe
+taskkill /f /im OriginClientService.exe
+taskkill /f /im OriginER.exe
+taskkill /f /im OriginThinSetupInternal.exe
+taskkill /f /im OriginLegacyCLI.exe
+taskkill /f /im Agent.exe
+taskkill /f /im Client.exe
+@ ECHO.
+echo Stopping EasyAntiCheat Service......
 Sc stop EasyAntiCheat
+@ ECHO.
+echo Cleaning Files......(please be patient)
+timeout /t 02 >nul 
+@ ECHO.
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
 del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*.*"
 rmdir /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\"
@@ -204,6 +182,10 @@ del /q /s "C:\Users\%username%\AppData\Local\Microsoft\Feeds"
 del /a /q /s "C:\Users\%Username%\AppData\Local\updater.log"
 del "%localappdata%\Microsoft\Feeds" /s /f /q
 @RD /S /Q "%C:\MSOCache\{71230000-00E2-0000-1000-00000000}"
+del /s /f /q %userprofile%\Recent\*.*
+del /s /f /q C:\Windows\Prefetch\*.*
+del /s /f /q C:\Windows\Temp\*.*
+del /s /f /q C:\Windows\Public\Libraries\*.*
 del /s /f /q %windir%\temp\*.*
 del /s /f /q %windir%\Prefetch\*.*
 rd /s /q %windir%\Prefetch
@@ -217,6 +199,8 @@ del /f /s /q %systemdrive%\*.dlf
 del /f /s /q %systemdrive%\*.old
 del /f /s /q %windir%\*.bak
 del /f /s /q %windir%\prefetch\*.*
+del /f /s /q %systemdrive%\recycled\*.*
+del /f /s /q %windir%\*.bak
 del /f /s /q "%Temp%"
 rd /s /q %windir%\temp md %windir%\temp
 del /f /s /q "%systemdrive%\ProgramData\Origin\AchievementCache\*"
@@ -391,7 +375,6 @@ rd /q /s W:\$Recycle.Bin
 rd /q /s X:\$Recycle.Bin
 rd /q /s Y:\$Recycle.Bin
 rd /q /s Z:\$Recycle.Bin
-
 del /f /s /q "x:\$RECYCLE.BIN"
 del /f /s /q "x:\PerfLogs"
 del /f /s /q "x:\MSOCache"
@@ -493,6 +476,7 @@ rmdir /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\LocalLo
 rmdir /s /q "%systemdrive%\Windows\Public\Libraries"
 rmdir /s /q "%systemdrive%\Windows\Prefetch"
 rmdir /s /q "%systemdrive%\Intel"
+rmdir /s /q "%systemdrive%\desktop.ini"
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\Autom\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Windows\rescache\_merged\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\ntuser.dat.LOG1\*.*"
@@ -523,6 +507,9 @@ del /s /f /a:h /a:a /q "%systemdrive%\Windows\WindowsUpdate.log\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\DataStore.edb\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\Logs\edb.log\*.*"
 rmdir /s /q "%systemdrive%\ProgramData\Microsoft\Windows\WER\Temp"
+rmdir /s /q "%systemdrive%\Windows\temp\*"
+del /f /s /q "%systemdrive%\Windows\temp\*.*"
+rmdir /s /q "%systemdrive%\Windows\Logs"
 rmdir /s /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\Logs"
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\LocalCache\*.*
@@ -564,24 +551,13 @@ rmdir /s /q "%systemdrive%\Windows\SoftwareDistribution\DataStore\Logs"
 rmdir /s /q "%systemdrive%\Windows\System32\spp\store\2.0\cache"
 rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\AC"
 rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\MicrosoftEdge\SharedCacheContainers"
-
-reg delete "HKLM\SYSTEM\ControlSet001\Services\EpicOnlineServices" /f
-reg delete "HKCU\SOFTWARE\Epic Games" /f
-reg delete "HKLM\SOFTWARE\Classes\com.epicgames.launcher" /f
-reg delete "HKLM\SYSTEM\ControlSet001\Services\BEService" /f
-reg delete "HKLM\SYSTEM\ControlSet001\Services\BEDaisy" /f
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEDaisy" /f
-reg delete "HKLM\SYSTEM\ControlSet001\Services\EasyAntiCheat" /f
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EasyAntiCheat" /f
-reg delete "HKLM\SYSTEM\CurrentControlSet\Services\BEService" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\EasyAntiCheat" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Epic Games" /f
-reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged" /f
-reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
-reg delete "HKCU\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\com.epicgames.launcher" /f
-reg delete "HKCR\com.epicgames.eos" /f
-reg delete "HKLM\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications" /f
-reg delete "HKEY_USERS\S-1-5-18\Software\Epic Games" /f
+rd /q /s %systemdrive%\$Recycle.Bin
+rmdir /s /q "A:\Recovery"
+@del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "A:\MSOCache"
+rmdir /s /q "A:\Recovery"
+@del /s /f /a:h /a:a /q "A:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "A:\MSOCache"
 
 rmdir /s /q "B:\Recovery"
 @del /s /f /a:h /a:a /q "B:\Users\Public\Libraries\collection.dat\*.*"
@@ -626,7 +602,10 @@ rmdir /s /q "G:\Recovery"
 rmdir /s /q "G:\MSOCache"
 
 rmdir /s /q "H:\Recovery"
-del /s /q /f "H:\Users\Public\Libraries\collection.dat\*.*"
+@del /s /f /a:h /a:a /q "H:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "H:\MSOCache"
+rmdir /s /q "H:\Recovery"
+@del /s /f /a:h /a:a /q "H:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "H:\MSOCache"
 
 rmdir /s /q "I:\Recovery"
@@ -636,6 +615,12 @@ rmdir /s /q "I:\Recovery"
 @del /s /f /a:h /a:a /q "I:\Users\Public\Libraries\collection.dat\*.*"
 rmdir /s /q "I:\MSOCache"
 
+rmdir /s /q "J:\Recovery"
+@del /s /f /a:h /a:a /q "J:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "J:\MSOCache"
+rmdir /s /q "J:\Recovery"
+@del /s /f /a:h /a:a /q "J:\Users\Public\Libraries\collection.dat\*.*"
+rmdir /s /q "J:\MSOCache"
 
 rmdir /s /q "K:\Recovery"
 @del /s /f /a:h /a:a /q "K:\Users\Public\Libraries\collection.dat\*.*"
@@ -753,6 +738,31 @@ rd /q /s %systemdrive%\$Recycle.Bin
 rd /q /s A:\$Recycle.Bin
 rd /q /s B:\$Recycle.Bin
 rd /q /s C:\$Recycle.Bin
+rd /q /s D:\$Recycle.Bin
+rd /q /s E:\$Recycle.Bin
+rd /q /s F:\$Recycle.Bin
+rd /q /s G:\$Recycle.Bin
+rd /q /s H:\$Recycle.Bin
+rd /q /s I:\$Recycle.Bin
+rd /q /s J:\$Recycle.Bin
+rd /q /s K:\$Recycle.Bin
+rd /q /s L:\$Recycle.Bin
+rd /q /s M:\$Recycle.Bin
+rd /q /s N:\$Recycle.Bin
+rd /q /s O:\$Recycle.Bin
+rd /q /s P:\$Recycle.Bin
+rd /q /s Q:\$Recycle.Bin
+rd /q /s R:\$Recycle.Bin
+rd /q /s S:\$Recycle.Bin
+rd /q /s T:\$Recycle.Bin
+rd /q /s U:\$Recycle.Bin
+rd /q /s V:\$Recycle.Bin
+rd /q /s W:\$Recycle.Bin
+rd /q /s X:\$Recycle.Bin
+rd /q /s Y:\$Recycle.Bin
+rd /q /s Z:\$Recycle.Bin
+
+@ ECHO.
 
 REG DELETE "HKCU\Software\Electronic Arts\EA Core\Staging\194908\ergc" /f
 REG DELETE "HKCU\Software\Electronic Arts" /f
@@ -899,7 +909,10 @@ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateReposit
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a80\_IndexKeys:  55 73 65 72 5C 33 5C 31 61 38 30 00 55 73 65 72 41 6E 64 50 61 63 6B 61 67 65 5C 33 5E 31 38 30 00 00" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a81\Package: 0x00000181" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a81\User: 0x00000003" /f
-REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a81\_IndexKeys:  55 73 65 72 5C 33 5C 31 61 38 31 00 55 73 65 72 41 6E 64 50 61 63 6B 61 67 65 5C 33 5E 31 38 31 00 00" /
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a81\_IndexKeys:  55 73 65 72 5C 33 5C 31 61 38 31 00 55 73 65 72 41 6E 64 50 61 63 6B 61 67 65 5C 33 5E 31 38 31 00 00" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a82\Package: 0x00000182" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a82\User: 0x00000003" /f
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a82\_IndexKeys:  55 73 65 72 5C 33 5C 31 61 38 32 00 55 73 65 72 41 6E 64 50 61 63 6B 61 67 65 5C 33 5E 31 38 32 00 00" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a83\Package: 0x00000180" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a83\User: 0x00000004" /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\PackageUser\Data\1a83\_IndexKeys:  55 73 65 72 5C 34 5C 31 61 38 33 00 55 73 65 72 41 6E 64 50 61 63 6B 61 67 65 5C 34 5E 31 38 30 00 00" /f
@@ -914,6 +927,7 @@ REG DELETE "HKLM\SYSTEM\ControlSet001\Control\hivelist\\REGISTRY\WC\Silo19faac47
 REG DELETE "HKLM\SYSTEM\ControlSet001\Control\hivelist\\REGISTRY\WC\Silo19faac47-bee9-becb-79a7-b4e6e1bfd862user_classes:  5C 44 65 76 69 63 65 5C 48 61 72 64 64 69 73 6B 56 6F 6C 75 6D 65 33 5C 50 72 6F 67 72 61 6D 44 61 74 61 5C 50 61 63 6B 61 67 65 73 5C 4D 69 63 72 6F 73 6F 66 74 2E 53 6B 79 70 65 41 70 70 5F 6B 7A 66 38 71 78 66 33 38 7A 67 35 63 5C 53 2D 31 2D 35 2D 32 31 2D 32 35 33 32 33 38 32 35 32 38 2D 35 38 31 32 31 34 38 33 34 2D 32 35 33 34 34 37 34 32 34 38 2D 31 30 30 31 5C 53 79 73 74 65 6D 41 70 70 44 61 74 61 5C 48 65 6C 69 75 6D 5C 55 73 65 72 43 6C 61 73 73 65 73 2E 64 61 74 00 00" /f
 REG DELETE "HKLM\SYSTEM\ControlSet001\Control\hivelist\\REGISTRY\WC\Siloe6b4a779-bfe1-62d8-47ac-fa19e9becbbecom:  5C 44 65 76 69 63 65 5C 48 61 72 64 64 69 73 6B 56 6F 6C 75 6D 65 33 5C 50 72 6F 67 72 61 6D 44 61 74 61 5C 50 61 63 6B 61 67 65 73 5C 4D 69 63 72 6F 73 6F 66 74 2E 53 6B 79 70 65 41 70 70 5F 6B 7A 66 38 71 78 66 33 38 7A 67 35 63 5C 53 2D 31 2D 35 2D 32 31 2D 32 35 33 32 33 38 32 35 32 38 2D 35 38 31 32 31 34 38 33 34 2D 32 35 33 34 34 37 34 32 34 38 2D 31 30 30 31 5C 53 79 73 74 65 6D 41 70 70 44 61 74 61 5C 48 65 6C 69 75 6D 5C 43 61 63 68 65 5C 35 63 38 63 62 62 36 61 61 37 65 61 31 34 32 34 5F 43 4F 4D 31 35 2E 64 61 74 00 00" /f
 REG DELETE "HKLM\SYSTEM\ControlSet001\Control\hivelist\\REGISTRY\WC\Silo19faac47-bee9-becb-79a7-b4e6e1bfd862com:  5C 44 65 76 69 63 65 5C 48 61 72 64 64 69 73 6B 56 6F 6C 75 6D 65 33 5C 50 72 6F 67 72 61 6D 44 61 74 61 5C 50 61 63 6B 61 67 65 73 5C 4D 69 63 72 6F 73 6F 66 74 2E 53 6B 79 70 65 41 70 70 5F 6B 7A 66 38 71 78 66 33 38 7A 67 35 63 5C 53 2D 31 2D 35 2D 32 31 2D 32 35 33 32 33 38 32 35 32 38 2D 35 38 31 32 31 34 38 33 34 2D 32 35 33 34 34 37 34 32 34 38 2D 31 30 30 31 5C 53 79 73 74 65 6D 41 70 70 44 61 74 61 5C 48 65 6C 69 75 6D 5C 43 61 63 68 65 5C 35 63 38 63 62 62 36 61 61 37 65 61 31 34 32 34 2E 64 61 74 00 00" /f
+REG DELETE "HKLM\SYSTEM\ControlSet001\Services\bam\State\UserType: 0x00000010" /f
 REG DELETE "HKLM\SYSTEM\ControlSet001\Services\EasyAntiCheat" /f
 REG DELETE "HKLM\SYSTEM\ControlSet001\Services\EasyAntiCheat\Security\Security:  01 00 14 80 A0 00 00 00 AC 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 70 00 05 00 00 00 00 00 14 00 30 00 02 00 01 01 00 00 00 00 00 01 00 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 00 00 14 00 8D 01 02 00 01 01 00 00 00 00 00 05 04 00 00 00 00 00 14 00 8D 01 02 00 01 01 00 00 00 00 00 05 06 00 00 00 01 01 00 00 00 00 00 05 12 00 00 00 01 01 00 00 00 00 00 05 12 00 00 00" /f
 REG DELETE "HKLM\SYSTEM\CurrentControlSet\Control\hivelist\\REGISTRY\WC\Silo19faac47-bee9-becb-79a7-b4e6e1bfd862software:  5C 44 65 76 69 63 65 5C 48 61 72 64 64 69 73 6B 56 6F 6C 75 6D 65 33 5C 50 72 6F 67 72 61 6D 44 61 74 61 5C 50 61 63 6B 61 67 65 73 5C 4D 69 63 72 6F 73 6F 66 74 2E 53 6B 79 70 65 41 70 70 5F 6B 7A 66 38 71 78 66 33 38 7A 67 35 63 5C 53 2D 31 2D 35 2D 32 31 2D 32 35 33 32 33 38 32 35 32 38 2D 35 38 31 32 31 34 38 33 34 2D 32 35 33 34 34 37 34 32 34 38 2D 31 30 30 31 5C 53 79 73 74 65 6D 41 70 70 44 61 74 61 5C 48 65 6C 69 75 6D 5C 43 61 63 68 65 5C 35 63 38 63 62 62 36 61 61 37 65 61 31 34 32 34 2E 64 61 74 00 00" /f
@@ -981,6 +995,10 @@ REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Microsoft
 REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\1\ApplicationViewManagement\W32:00000000001703E6" /f
 REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\1\ApplicationViewManagement\W32:0000000000170440" /f
 REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\1\ApplicationViewManagement\W32:00000000001704FC" /f
+REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" /f
+REG DELETE "HKU\S-1-5-21-2532382528-581214834-2534474248-1001\Software\Classes\Local Settings\MrtCache\C:%5CProgram Files%5CWindowsApps%5CMicrosoft.XboxGamingOverlay_2.26.28001.0_x64__8wekyb3d8bbwe%5Cmicrosoft.system.package.metadata%5CS-1-5-21-2532382528-581214834-2534474248-1001-MergedResources-2.pri" /f
+REG DELETE "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher" /f
+REG DELETE "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\Certificates" /f
 REG DELETE "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\CRLs" /f
 REG DELETE "HKU\S-1-5-18\Software\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher" /f
@@ -988,14 +1006,135 @@ REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedP
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CRLs" /f
 REG DELETE "HKU\S-1-5-18\Software\Policies\Microsoft\SystemCertificates\TrustedPublisher\CTLs" /f  
 REG DELETE "HKEY_CURRENT_USER\Software\Classes\Installer\Dependencies" /v MSICache /f
+
+
+@ ECHO.
+@ ECHO.
+@echo off
+echo Release and Renew DHCP
+@ ECHO.
+@echo off
+: Disable Static IP/Enable DHCP    Remove DNS     Enable NICs
+for /f "skip=2 tokens=3*" %%i in ('netsh interface show interface') do (
+netsh int ip set address "%%j" dhcp 
+netsh int ip set dns "%%j" dhcp 
+netsh interface set interface name="%%j" admin=enabled 
 )
-echo 1 | start /b /wait AppleCleaner.exe
+@ ECHO.
+@ ECHO.
+@ ECHO.
+echo Flush DNS: 
+@echo off
+ipconfig /flushdns 
+@ ECHO.
+@ ECHO.
+@ ECHO.
+echo Clear ARP/Route table:
+@echo off
+netsh interface ip delete arpcache
+@ ECHO.
+@ ECHO.
+@ ECHO.
+echo Clear SSL state:
+@echo off
+certutil -URLCache * delete 
+@ ECHO.
+@ ECHO.
+@ ECHO.
+echo Reset TCP/IP:
+@echo off
+netsh int ip reset 
+netsh int ipv4 reset 
+netsh int ipv6 reset 
 
-:do_clear
-echo clearing %1
-wevtutil.exe cl %1
+@ ECHO.
+@ ECHO.
+echo Clear Winsock:
+@echo off
+netsh winsock reset 
+@ ECHO.
 
-exit
+echo Reset Firewall Settings
+@echo off 
+netsh advfirewall reset 
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+@ ECHO.
+echo                 				System cleaned successfully
+@ ECHO.
+echo  		You Can Now Launch Origin *Note That Apex Will Start Verifying Game Files by Itself*
+@ ECHO.
+@ ECHO.
+echo. & pause
+
 
 
 
