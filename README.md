@@ -105,14 +105,8 @@ There are many free spoofing methods (even permanent ones) google will be your b
 > No, there is no UNBAN TOOL so stop looking for one. Just follow the steps explained make a new account and enjoy.
 
 --- 
-
-  <p align="center">
-    <a href="https://discord.gg/MBTkVcJefp">
-        <img title="Slackes server discord" alt="Slackes discord" src="https://discordapp.com/api/guilds/880135738077896764/widget.png?style=banner2"/>
-    </a>
-</p> 
  
-## 💬 ・[Discord](https://discord.gg/MBTkVcJefp) 
+## 💬 ・[Telegram](https://t.me/Slackes) 
 
  ### 🛒〢 `SHOP`
  
@@ -140,6 +134,7 @@ There are many free spoofing methods (even permanent ones) google will be your b
 A website that I created to introduce myself from start to finish. hope you like it [Slackes.me](http://slackes.me/)
 
 ---
+
 
   <br>
 
