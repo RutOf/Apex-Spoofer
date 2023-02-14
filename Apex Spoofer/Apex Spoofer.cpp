@@ -1,8 +1,3 @@
-// thanks to who ever made hwid shifter, this is a just a loader for kdmapper and the driver simple download stuff
-// u can find hwid shifter on github for the source
-
-
-
 #include <iostream>
 #include<windows.h>
 #include <tchar.h>
