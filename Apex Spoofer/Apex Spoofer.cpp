@@ -8,37 +8,6 @@
 #pragma comment(lib, "urlmon.lib")
 #pragma comment(lib,"wininet.lib")
 
-void download()
-{
-
-	//downloads compiled driver to spoof serial numbers
-	
-
-	// downloads are not packed UC u can decompile all 
-
-	/// <summary>
-	///  driver - spoof.sys https://github.com/rezadfx/HWID-shifter
-	///	 kdmapper - mapper.exe https://github.com/TheCruZ/kdmapper 
-	///  traces - trace.bat https://www.unknowncheats.me/forum/apex-legends/450793-apex-eac-origin-trace-files-cleaner.html
-	/// </summary>
-	HRESULT hr;
-	LPCTSTR Url = _T("https://cdn.discordapp.com/attachments/834660296567423006/840265703071416320/spoofer_1.sys"), File = _T("C:\\spoof.sys");
-	hr = URLDownloadToFile(0, Url, File, 0, 0);
-
-
-	// kdmapper 20hz supported by thecruz 
-
-	LPCTSTR mapper = _T("https://cdn.discordapp.com/attachments/836243815890419718/840365876921892864/kdmapper.exe"), map = _T("C:\\mapper.exe");
-	hr = URLDownloadToFile(0, mapper, map, 0, 0);
-
-
-	
-	// tarce cleaner from UC, modifyed to not destory your pc and delete apex LOL 
-	LPCTSTR traces = _T("https://cdn.discordapp.com/attachments/836243815890419718/840373348348592178/Apex_Cleaner.bat"), trace = _T("C:\\traces.bat");
-	hr = URLDownloadToFile(0, traces, trace, 0, 0);
-
-}
-
 
 void traces()
 {
