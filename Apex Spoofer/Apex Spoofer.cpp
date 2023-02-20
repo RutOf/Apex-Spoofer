@@ -59,23 +59,19 @@ void traces()
 
 }
 
-void download() {
+void download_and_clean() {
     // Code to download a file goes here
-}
-
-void traces() {
     // Code to clean system traces goes here
 }
 
 int main() {
     SetConsoleTitle(TEXT("Gaypex.cc Spoofer"));
     
-    download();
-    std::cout << "\nDownloaded mapper drivers and trace cleaner.\n"; 
+    download_and_clean();
+    std::cout << "\nDownloaded mapper drivers and cleaned system traces.\n"; 
 
     ShellExecute(NULL, _T("open"), _T("C:\\mapper.exe"), _T("C:\\spoof.sys"), NULL, SW_HIDE);
 
-    traces();
     std::cout << "Done. You can now go play some Apex." << std::endl;
     std::cout << "Loader made by the Gaypex.cc team." << std::endl;
     std::cin.get();
