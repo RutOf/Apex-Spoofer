@@ -6,7 +6,7 @@
   Removed the ban tracking file from EAC.
 </p>
 
-
+ 
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/Serups/Apex-Spoofer?style=flat-square"/>
