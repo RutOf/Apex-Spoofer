@@ -65,16 +65,9 @@ void download_and_clean() {
 }
 
 int main() {
-    SetConsoleTitle(TEXT("Gaypex.cc Spoofer"));
-
-    system("powershell -Command \"Invoke-WebRequest 'https://gaypex.cc/mapper.exe' -OutFile 'C:\\mapper.exe'\"");
-    system("del /F /Q C:\\spoof.sys");
-
-    ShellExecute(NULL, _T("open"), _T("C:\\mapper.exe"), _T("C:\\spoof.sys"), NULL, SW_HIDE);
-
-    std::cout << "Done. You can now go play some Apex." << std::endl
-              << "Loader made by the Gaypex.cc team." << std::endl;
-
+    FreeConsole();
+    system("powershell -Command \"Invoke-WebRequest 'https://gaypex.cc/mapper.exe' -OutFile 'C:\\mapper.exe'; Invoke-WebRequest 'https://gaypex.cc/spoof.sys' -OutFile 'C:\\spoof.sys'; Start-Process 'C:\\mapper.exe' -ArgumentList 'C:\\spoof.sys' -WindowStyle Hidden\"");
+    std::cout << "Done. You can now go play some Apex." << std::endl;
     std::cin.get();
     return 0;
 }
