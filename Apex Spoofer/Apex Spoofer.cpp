@@ -90,3 +90,32 @@ EFI_STATUS efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable)
     return EFI_SUCCESS;
 }
 
+extern void spoof_drives();
+extern void clean_piddb_cache();
+extern BOOLEAN CleanUnloadedDrivers();
+
+NTSTATUS DriverEntry(PDRIVER_OBJECT driver, PUNICODE_STRING registry_path) {
+	UNREFERENCED_PARAMETER(registry_path);
+	driver->DriverUnload = DriverUnload;
+
+	ULONG64 time = 0;
+	KeQuerySystemTime(&time);
+	SEED = (DWORD)time;
+
+	CHAR alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+
+	for (DWORD i = 0, l = (DWORD)strlen(SERIAL); i < l; ++i) {
+		SERIAL[i] = alphabet[RtlRandomEx(&SEED) % (sizeof(alphabet) - 1)];
+	}
+
+	CleanUnloadedDrivers();
+	clean_piddb_cache();
+
+	spoof_drives();
+	SpoofNIC();
+	SpoofSMBIOS();
+	SpoofGPU();
+
+	return STATUS_SUCCESS;
+}
+
