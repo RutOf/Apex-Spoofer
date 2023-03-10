@@ -22,7 +22,7 @@
 - We have written detailed instructions for use. including changing the number please read carefully to prevent confusion
 - Once everything is done, it is advisable to use TMAC to change the IP address.
 
-## <a id="setup"></a> 📁 〢 Install
+## <a id="setup"></a> 📁 〢 How To Use
 
 Order the steps to use as follows.
 
@@ -115,6 +115,8 @@ There are many free spoofing methods (even permanent ones) google will be your b
  
 ## 💬 ・[Discord](https://discord.gg/2euDQqzD8Y)
 
+`BLUE BUTTON FOR JOIN SERVER`
+
  ### 🛒〢 `SHOP`
  
 <table>
@@ -129,12 +131,12 @@ There are many free spoofing methods (even permanent ones) google will be your b
 
 - Lifetime & Free updated
 - Undetected / Legit
-- Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers + More)`
+- **Custom Feature if you want `(Example: Aimbot + Esp + Skin Changers + More)`**
 
 ### 🩹 〢 Warranty
 
-- Support 24/7 & Free updated 
-- Banned = `FULL REFUND`
+- **Support 24/7 & Free updated** 
+- **Banned = `FULL REFUND`**
 
 #### Website | Resume [Serups.me](http://Serups.me/)
 
@@ -143,5 +145,5 @@ There are many free spoofing methods (even permanent ones) google will be your b
   <br>
 
 <p align="center">
-  Copyright © 2021 - 2022
+  Copyright © 2023 All rights reserved
 <br>
