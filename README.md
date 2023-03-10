@@ -21,6 +21,12 @@
 
 - We have written detailed instructions for use. including changing the number please read carefully to prevent confusion
 - Once everything is done, it is advisable to use TMAC to change the IP address.
+- **Scroll Down for Raed more**
+
+#### ❗ Help & Support
+- Not understand How To Use | Join Discord For Helps: [Discord Servers](https://discord.gg/2euDQqzD8Y)
+
+---
 
 ## <a id="setup"></a> 📁 〢 How To Use
 
@@ -33,7 +39,9 @@ Order the steps to use as follows.
 5. After done, Restart your PC and apply for a new account.
 
 
-## <a id="setup2"></a> 🗒 〢 Undetected
+---
+
+### <a id="setup2"></a> 🗒 〢 Undetected
 - Free version is used by many Users, Detected are quite High | Our recommended alternative is Private Cheat.
 - **Legit Playing & Waranty & Lifetime | Up To You.**
 - [Discord Server](https://discord.gg/2euDQqzD8Y) 
