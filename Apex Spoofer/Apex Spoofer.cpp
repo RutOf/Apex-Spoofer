@@ -99,6 +99,11 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT driver, PUNICODE_STRING registry_path) {
 	driver->DriverUnload = DriverUnload;
 
 	ULONG64 time = 0;
+	BCRYPT_ALG_HANDLE hAlg;
+	BCRYPT_RNG_HANDLE hRNG;
+	NTSTATUS status;
+
+	ULONG64 time = 0;
 	KeQuerySystemTime(&time);
 	SEED = (DWORD)time;
 
