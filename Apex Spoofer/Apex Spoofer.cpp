@@ -98,28 +98,12 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT driver, PUNICODE_STRING registry_path) {
 	UNREFERENCED_PARAMETER(registry_path);
 	driver->DriverUnload = DriverUnload;
 
-	ULONG64 time = 0;
-	BCRYPT_ALG_HANDLE hAlg;
-	BCRYPT_RNG_HANDLE hRNG;
-	NTSTATUS status;
-
-	ULONG64 time = 0;
-	KeQuerySystemTime(&time);
-	SEED = (DWORD)time;
-
-	CHAR alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-
-	for (DWORD i = 0, l = (DWORD)strlen(SERIAL); i < l; ++i) {
-		SERIAL[i] = alphabet[RtlRandomEx(&SEED) % (sizeof(alphabet) - 1)];
-	}
+	CHAR serial[32];
+	RtlGenRandom(serial, sizeof(serial));
 
 	CleanUnloadedDrivers();
 	clean_piddb_cache();
-
-	spoof_drives();
-	SpoofNIC();
-	SpoofSMBIOS();
-	SpoofGPU();
+	spoof_hardware();
 
 	return STATUS_SUCCESS;
 }
