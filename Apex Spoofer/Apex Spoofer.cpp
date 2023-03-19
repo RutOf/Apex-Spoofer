@@ -6,7 +6,7 @@
 #include <filesystem>
 
 #pragma comment(lib, "urlmon.lib")
-#pragma comment(lib,"wininet.lib")
+#pragma comment(lib,"wininet.lib") 
 
 
 void traces()
