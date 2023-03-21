@@ -90,21 +90,43 @@ EFI_STATUS efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable)
     return EFI_SUCCESS;
 }
 
-extern void spoof_drives();
-extern void clean_piddb_cache();
-extern BOOLEAN CleanUnloadedDrivers();
+void spoof_hardware();
+void clean_piddb_cache();
+BOOLEAN clean_unloaded_drivers();
 
-NTSTATUS DriverEntry(PDRIVER_OBJECT driver, PUNICODE_STRING registry_path) {
-	UNREFERENCED_PARAMETER(registry_path);
-	driver->DriverUnload = DriverUnload;
+NTSTATUS DriverEntry(_In_ PDRIVER_OBJECT DriverObject, _In_ PUNICODE_STRING RegistryPath) {
+    UNREFERENCED_PARAMETER(RegistryPath);
 
-	CHAR serial[32];
-	RtlGenRandom(serial, sizeof(serial));
+    DriverObject->DriverUnload = DriverUnload;
 
-	CleanUnloadedDrivers();
-	clean_piddb_cache();
-	spoof_hardware();
+    // Generate a random serial number for the driver.
+    CHAR serial[32];
+    RtlSecureZeroMemory(serial, sizeof(serial));
+    RtlGenRandom(serial, sizeof(serial));
+    KdPrint(("Driver serial number: %s\n", serial));
 
-	return STATUS_SUCCESS;
+    clean_unloaded_drivers();
+    clean_piddb_cache();
+    spoof_hardware();
+
+    return STATUS_SUCCESS;
 }
 
+void DriverUnload(_In_ PDRIVER_OBJECT DriverObject) {
+    UNREFERENCED_PARAMETER(DriverObject);
+
+    // Undo any spoofing or cleaning operations that were performed by the driver.
+}
+
+BOOLEAN clean_unloaded_drivers() {
+    // TODO: Implement the clean_unloaded_drivers function.
+    return FALSE;
+}
+
+void clean_piddb_cache() {
+    // TODO: Implement the clean_piddb_cache function.
+}
+
+void spoof_hardware() {
+    // TODO: Implement the spoof_hardware function.
+}
